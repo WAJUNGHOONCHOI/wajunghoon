@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'AvenirLTStd-Roman';
+    font-family: 'Noto Sans KR', sans-serif;
     text-decoration: none;
     text-transform: capitalize;
     outline: none;
@@ -25,6 +26,8 @@ body{
 
 
 .logo{
+    width: 100%;
+    text-align: center;
     font-family: Arial;
     font-size: 7rem;
     font-weight: bold;
@@ -339,16 +342,21 @@ body{
 
 .contact_container .contact_wrap p{
     margin-bottom: 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-transform: none;
     color: #666;
 }
 .contact_container .contact_wrap p a{
     text-transform: none;
     color: #666;
+    cursor: pointer;
 }
 .contact_container .contact_wrap p a:hover{
     text-decoration: underline;
+}
+.contact_container .contact_wrap .fa-regular{
+    margin-right: .4rem;
+    vertical-align: -1px;
 }
 .contact_container .contact_wrap .fa-phone{
     margin-right: 5px;
@@ -449,42 +457,77 @@ body{
 
 
 
-@media (max-width:1080px){
+@media (max-width:820px){
     .navbar > ul > li > ul{
         width: 100%;
+    }
+    .design_full{
+        margin-top: 7%;
     }
     .faq_container{
         margin-top: 10%;
     }
+    .faq_container .faq_wrap{
+        padding: 6rem 12%;
+    }
+    .faq_container .faq_wrap .faq .question,
+    .faq_container .faq_wrap .faq .answer{
+        font-size: 2rem;
+    }
 }
 
-@media (max-width:750px){
+
+
+
+@media (max-width:390px){
+
     .navbar > ul > li > ul{
-        width: 100%;
+        top: 6.4%;
     }
-    .faq_container{
-        margin-top: 15%;
+
+    .design_photo.active{
+        padding: 0 7% 7%;
     }
-}
+    .design_photo .box{
+        flex: none;
+        height: 108px;
+    }
 
+    .design_full{
+        padding: 40px 0;
+    }
 
+    .about_wrap{
+        height: 82vh;
+        padding: 2% 7% 7%;
+        top: 52%;
+    }
 
-
-@media (max-width:550px){
     .about_wrap .about_text p{
         padding-bottom: 20px;
         line-height: 2rem;
         font-size: 1.3rem;
     }
     .faq_container{
-        margin-top: 20%;
+        margin-top: 25%;
+    }
+    .faq_container .faq_wrap{
+        padding: 2rem 4%;
+    }
+    .faq_container .faq_wrap .faq .question,
+    .faq_container .faq_wrap .faq .answer{
+        font-size: 1.7rem;
+    }
+
+
+    .contact_container{
+        top: 52%;
+    }
+
+    .contact_container .contact_wrap{
+        padding: 2rem 5%;
+    }
+    .contact_container .contact_wrap > div > div{
+        flex: none;
     }
 }
-
-
-
-/* @media (max-width:532px){
-    .design_photo.active{
-        margin-top: 30%;
-    }
-} */
