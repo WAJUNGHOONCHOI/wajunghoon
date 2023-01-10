@@ -64,6 +64,10 @@ const $designFull13 = document.querySelector('.design_box_13_full');
 const $designFull14 = document.querySelector('.design_box_14_full');
 
 
+document.querySelector('.design_photo span').onclick = () =>{
+    $designPhoto.classList.remove('active');
+};
+
 
 $design.addEventListener('click', () => {
     $designPhoto.classList.add('active');
@@ -185,9 +189,6 @@ document.querySelector('.design_box_14_full span').onclick = () =>{
 
 const $about = document.querySelector('#about');
 const $aboutWrap = document.querySelector('.about_wrap');
-const $aboutImage = document.querySelector('.about_image img');
-const $aboutFullImage = document.querySelector('.about_full_image')
-const $aboutFullImageSpan = document.querySelector('.about_full_image span')
 
 
 $about.addEventListener('click', () => {
@@ -198,12 +199,8 @@ $about.addEventListener('click', () => {
 });
 
 
-$aboutImage.addEventListener('click', () => {
-    $aboutFullImage.classList.toggle('active');
-});
-
-document.querySelector('.about_full_image span').onclick = () =>{
-    $aboutFullImage.classList.remove('active');
+document.querySelector('.about_wrap span').onclick = () =>{
+    $aboutWrap.classList.remove('active');
 };
 
 
@@ -231,6 +228,10 @@ $faqs.addEventListener('click', () => {
     $designPhoto.classList.remove('active');
     $contact_container.classList.remove('active');
 });
+
+document.querySelector('.faq_wrap span').onclick = () =>{
+    $faq_container.classList.remove('active');
+};
 
 
 
@@ -261,54 +262,110 @@ const $faqIn08 = document.querySelector('.faq_in08');
 
 $faqQ01.addEventListener('click', () => {
     $faqIn01.classList.add('active');
+    $faqIn02.classList.remove('active');
+    $faqIn03.classList.remove('active');
+    $faqIn04.classList.remove('active');
+    $faqIn05.classList.remove('active');
+    $faqIn06.classList.remove('active');
+    $faqIn07.classList.remove('active');
+    $faqIn08.classList.remove('active');
 });
 $faqIn01.addEventListener('click', () => {
     $faqIn01.classList.remove('active');
 });
 
 $faqQ02.addEventListener('click', () => {
+    $faqIn01.classList.remove('active');
     $faqIn02.classList.add('active');
+    $faqIn03.classList.remove('active');
+    $faqIn04.classList.remove('active');
+    $faqIn05.classList.remove('active');
+    $faqIn06.classList.remove('active');
+    $faqIn07.classList.remove('active');
+    $faqIn08.classList.remove('active');
 });
 $faqIn02.addEventListener('click', () => {
     $faqIn02.classList.remove('active');
 });
 
 $faqQ03.addEventListener('click', () => {
+    $faqIn01.classList.remove('active');
+    $faqIn02.classList.remove('active');
     $faqIn03.classList.add('active');
+    $faqIn04.classList.remove('active');
+    $faqIn05.classList.remove('active');
+    $faqIn06.classList.remove('active');
+    $faqIn07.classList.remove('active');
+    $faqIn08.classList.remove('active');
 });
 $faqIn03.addEventListener('click', () => {
     $faqIn03.classList.remove('active');
 });
 
 $faqQ04.addEventListener('click', () => {
+    $faqIn01.classList.remove('active');
+    $faqIn02.classList.remove('active');
+    $faqIn03.classList.remove('active');
     $faqIn04.classList.add('active');
+    $faqIn05.classList.remove('active');
+    $faqIn06.classList.remove('active');
+    $faqIn07.classList.remove('active');
+    $faqIn08.classList.remove('active');
 });
 $faqIn04.addEventListener('click', () => {
     $faqIn04.classList.remove('active');
 });
 
 $faqQ05.addEventListener('click', () => {
+    $faqIn01.classList.remove('active');
+    $faqIn02.classList.remove('active');
+    $faqIn03.classList.remove('active');
+    $faqIn04.classList.remove('active');
     $faqIn05.classList.add('active');
+    $faqIn06.classList.remove('active');
+    $faqIn07.classList.remove('active');
+    $faqIn08.classList.remove('active');
 });
 $faqIn05.addEventListener('click', () => {
     $faqIn05.classList.remove('active');
 });
 
 $faqQ06.addEventListener('click', () => {
+    $faqIn01.classList.remove('active');
+    $faqIn02.classList.remove('active');
+    $faqIn03.classList.remove('active');
+    $faqIn04.classList.remove('active');
+    $faqIn05.classList.remove('active');
     $faqIn06.classList.add('active');
+    $faqIn07.classList.remove('active');
+    $faqIn08.classList.remove('active');
 });
 $faqIn06.addEventListener('click', () => {
     $faqIn06.classList.remove('active');
 });
 
 $faqQ07.addEventListener('click', () => {
+    $faqIn01.classList.remove('active');
+    $faqIn02.classList.remove('active');
+    $faqIn03.classList.remove('active');
+    $faqIn04.classList.remove('active');
+    $faqIn05.classList.remove('active');
+    $faqIn06.classList.remove('active');
     $faqIn07.classList.add('active');
+    $faqIn08.classList.remove('active');
 });
 $faqIn07.addEventListener('click', () => {
     $faqIn07.classList.remove('active');
 });
 
 $faqQ08.addEventListener('click', () => {
+    $faqIn01.classList.remove('active');
+    $faqIn02.classList.remove('active');
+    $faqIn03.classList.remove('active');
+    $faqIn04.classList.remove('active');
+    $faqIn05.classList.remove('active');
+    $faqIn06.classList.remove('active');
+    $faqIn07.classList.remove('active');
     $faqIn08.classList.add('active');
 });
 $faqIn08.addEventListener('click', () => {

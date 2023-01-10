@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     text-decoration: none;
     text-transform: capitalize;
     outline: none;
     border: none;
     transition: all .2s linear;
+    transition: width none;
 }
 html{
     font-size: 62.5%;
@@ -19,6 +20,7 @@ html{
 body{
     height: 100vh;
     overflow-x: hidden;
+    background-color: #ebebeb;
 }
 
 
@@ -50,11 +52,18 @@ body{
 .mainpage{
     width: 100%;
     height: 100vh;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
 }
 
 .navbar{
     padding: 2rem 9%;
     text-align: center;
+    z-index: 1000;
 }
 
 
@@ -79,7 +88,7 @@ body{
     display: flex;
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 5.5%;
     transform: translateX(-50%);
 }
 .navbar > ul > li > ul > li{
@@ -124,28 +133,54 @@ body{
     display: none;
 }
 .design_photo.active{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: block;
     width: 100%;
-    height: 80vh;
-    padding: 0 10% 7%;
-    text-align: center;
+    height: 100%;
+    padding: 5% 10%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, .9);
+    background: #ebebeb;
 }
-.design_photo .box{
-    flex: 1 1 5rem;
-    height: 140px;
+.design_photo > span{
+    font-size: 3rem;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    animation: btnscale 7s linear infinite;
+    cursor: pointer;
 }
-.design_photo .box img{
+.design_photo .design_photo_row{
+    display: flex;
+}
+.design_photo .design_photo_row .box{
+    flex: 1;
+    height: 160px;
+    margin: 10px;
+}
+.design_photo .design_photo_row .box img{
+    width: 100%;
     height: 100%;
     object-fit: cover;
     cursor: pointer;
 }
+/* .design_photo .design_photo_row .box_01{flex: 1;}
+.design_photo .design_photo_row .box_02{flex: 1;}
+.design_photo .design_photo_row .box_03{flex: 2;}
+.design_photo .design_photo_row .box_04{flex: 1;}
+.design_photo .design_photo_row .box_05{flex: 2;}
+.design_photo .design_photo_row .box_06{flex: 2;}
+.design_photo .design_photo_row .box_07{flex: 1;}
+.design_photo .design_photo_row .box_08{flex: 3;}
+.design_photo .design_photo_row .box_09{flex: 1;}
+.design_photo .design_photo_row .box_10{flex: 1;}
+.design_photo .design_photo_row .box_11{flex: 1;}
+.design_photo .design_photo_row .box_12{flex: 1;}
+.design_photo .design_photo_row .box_13{flex: 1;}
+.design_photo .design_photo_row .box_14{flex: 1;}
+.design_photo .design_photo_row .box_15{flex: 1;}
+.design_photo .design_photo_row .box_16{flex: 1;} */
 
 
 
@@ -154,15 +189,19 @@ body{
 .design_full_page{
     position: absolute;
     left: 0; right: 0;
-    top: 50px;
+    top: 0;
+}
+.design_full_page.active{
+    width: 100%;
+    height: 100%;
 }
 .design_full{
     display: none;
     width: 100%;
     height: 100%;
-    padding: 0 10%;
+    padding: 4% 10%;
     text-align: center;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(235, 235, 235, .9);
 }
 .design_full.active{
     display: block;
@@ -191,10 +230,9 @@ body{
 .about_wrap{
     display: none;
     width: 100%;
-    height: 80vh;
-    padding: 2% 20% 7%;
-    text-align: center;
-    background: rgba(255, 255, 255, .9);
+    height: 100vh;
+    padding: 5% 20% 7%;
+    background: #ebebeb;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -203,56 +241,75 @@ body{
 .about_wrap.active{
     display: block;
 }
+
+
+.about_wrap .about_text p.introduce{
+    padding: 0 2% 10px;
+    line-height: 50px;
+    font-family: 'Playfair Display', serif;;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.about_wrap .about_text p.introduce span{
+    padding-right: 8px;
+    font-size: 16px;
+}
 .about_wrap .about_text p{
-    line-height: 2.7rem;
-    font-size: 1.7rem;
+    text-align: center;
+    line-height: 27px;
+    font-size: 14px;
+    padding-bottom: 30px;
 }
 .about_wrap .about_text .about_image{
     width: 100%;
-    padding-bottom: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
 }
 .about_wrap .about_text .about_image img{
-    width: 40%;
-    border-radius: 50%;
+    width: 100%;
+    height: 270px;
     object-fit: cover;
     opacity: .7;
-    cursor: pointer;
 }
-
-
-
-
-.about_full_image{
-    display: none;
-    width: 100%;
-    padding: 10rem;
-    background: rgba(255, 255, 255, .7);
-    box-sizing: border-box;
+.about_wrap > span{
+    font-size: 3rem;
     position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 99;
-    transition: .2s;
-}
-.about_full_image span{
-    font-size: 40px;
-    font-weight: bold;
-    color: #333;
-    position: fixed;
-    right: 5%;
-    top: 5%;
+    right: 10%;
+    top: 3%;
+    animation: btnscale 10s linear infinite;
     cursor: pointer;
-    z-index: 99;
 }
-.about_full_image.active{
-    display: block;
+@keyframes btnscale{
+    0%{
+        transform: scale(1);
+    }
+    15%{
+        transform: scale(1.4);
+    }
+    30%{
+        transform: scale(1);
+    }
+    45%{
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
-.about_full_image img{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20px;
-    object-fit: cover;
-}
+
+
+
+
+
 
 
 
@@ -263,12 +320,12 @@ body{
     display: none;
     width: 100%;
     height: 100%;
-    margin-top: 10%;
+    padding-top: 10%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, .9);
+    background: #ebebeb;
 }
 .faq_container.active{
     display: block;
@@ -276,6 +333,18 @@ body{
 .faq_container .faq_wrap{
     padding: 2rem 20%;
     text-align: center;
+}
+.faq_container .faq_wrap h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.faq_container .faq_wrap > span{
+    font-size: 3rem;
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    animation: btnscale 7s linear infinite;
+    cursor: pointer;
 }
 
 .faq_container .faq_wrap .faq{
@@ -313,7 +382,6 @@ body{
     display: none;
     width: 100%;
     height: 80vh;
-    background: rgba(255, 255, 255, .9);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -452,7 +520,25 @@ body{
 
 
 
+@media (max-width:1080px){
+    .design_photo.active{
+        padding: 10% 10%;
+    }
+    .design_photo .design_photo_row .box{
+        height: 120px;
+    }
 
+
+    .about_wrap{
+        padding: 10% 12% 7%;
+    }
+    .about_wrap > span{
+        right: 12%;
+    }
+    .about_wrap .about_text .about_image img{
+        height: 300px;
+    }
+}
 
 
 
@@ -461,14 +547,46 @@ body{
     .navbar > ul > li > ul{
         width: 100%;
     }
-    .design_full{
-        margin-top: 7%;
+
+    
+    .design_photo.active{
+        padding: 15% 5%;
     }
+    .design_photo .design_photo_row .box{
+        height: 100px;
+    }
+    .about_wrap .about_text .about_image img{
+        height: 250px;
+    }
+    .design_photo > span{
+        font-size: 2.5rem;
+        right: 5.5%;
+        top: 3.5%;
+    }
+    .design_full{
+        padding-top: 10%;
+    }
+
+    .about_wrap{
+        padding: 13% 12% 7%;
+    }
+    .about_wrap .about_text p.introduce{
+        line-height: 40px;
+        font-size: 25px;
+    }
+    .about_wrap > span{
+        right: 10%;
+    }
+
+
     .faq_container{
-        margin-top: 10%;
+        padding-top: 15%;
     }
     .faq_container .faq_wrap{
-        padding: 6rem 12%;
+        padding: 5% 12%;
+    }
+    .faq_container .faq_wrap > span{
+        right: 10%;
     }
     .faq_container .faq_wrap .faq .question,
     .faq_container .faq_wrap .faq .answer{
@@ -478,41 +596,82 @@ body{
 
 
 
+@media (max-width:550px){
+    .design_photo.active{
+        padding: 20% 5%;
+    }
+    .design_photo .design_photo_row .box{
+        height: 80px;
+    }
 
-@media (max-width:390px){
+    .about_wrap{
+        padding: 20% 12% 7%;
+    }
+    .about_wrap .about_text p.introduce{
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .about_wrap .about_text .about_image img{
+        height: 200px;
+    }
+
+    .faq_container .faq_wrap > span{
+        right: 7%;
+        top: 3%;
+    }
+}
+
+
+
+@media (max-width:462px){
 
     .navbar > ul > li > ul{
         top: 6.4%;
     }
 
-    .design_photo.active{
-        padding: 0 7% 7%;
+
+    .design_photo{
+        padding: 10% 10%;
     }
-    .design_photo .box{
-        flex: none;
-        height: 108px;
+    .design_photo .design_photo_row .box{
+        height: 60px;
     }
 
-    .design_full{
-        padding: 40px 0;
+    .design_full span{
+        font-size: 27px;
+        top: 2%;
+        right: 4%;
     }
 
     .about_wrap{
-        height: 82vh;
-        padding: 2% 7% 7%;
-        top: 52%;
+        height: 100vh;
+        padding: 5rem 2rem;
+        top: 50%;
     }
+    .about_wrap.active{
+        background: #ebebeb;
+    }
+    .about_wrap .about_text p.introduce{
+        line-height: 25px;
+        font-size: 17px;
+    }
+    .about_wrap > span{
+        font-size: 2rem;
+        right: 5%;
+        top: 2%;
+    }
+    
 
     .about_wrap .about_text p{
         padding-bottom: 20px;
         line-height: 2rem;
-        font-size: 1.3rem;
-    }
-    .faq_container{
-        margin-top: 25%;
+        font-size: 1rem;
     }
     .faq_container .faq_wrap{
         padding: 2rem 4%;
+    }
+    .faq_container .faq_wrap > span{
+        right: 4%;
     }
     .faq_container .faq_wrap .faq .question,
     .faq_container .faq_wrap .faq .answer{
