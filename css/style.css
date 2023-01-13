@@ -159,12 +159,12 @@ body{
 }
 .portrait_photo .portrait_photo_row .box{
     flex: 1;
-    height: 200px;
+    height: 250px;
     margin: 10px;
     text-align: center;
 }
 .portrait_photo .portrait_photo_row .box img{
-    width: 75%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     cursor: pointer;
@@ -189,7 +189,7 @@ body{
     height: 100vh;
     padding: 4rem 4% 35%;
     text-align: center;
-    background:rgba(0, 0, 0, .9);
+    background:rgba(0, 0, 0, .8);
     position: relative;
 }
 .portrait_full.active{
@@ -212,6 +212,24 @@ body{
     cursor: pointer;
     z-index: 99;
 }
+
+.portrait_box_10_full,
+.portrait_box_11_full,
+.portrait_box_12_full,
+.portrait_box_14_full,
+.portrait_box_17_full,
+.portrait_box_18_full{
+    background: rgba(255, 255, 255, .7);
+}
+.portrait_box_10_full span,
+.portrait_box_11_full span,
+.portrait_box_12_full span,
+.portrait_box_14_full span,
+.portrait_box_17_full span,
+.portrait_box_18_full span{
+    color: #000;
+}
+
 
 /* ---- portrait ends ---- */
 
@@ -621,6 +639,7 @@ body{
     display: inline-block;
     padding-top: 10px;
     font-family: 'Courier Prime', monospace;
+    font-size: 1.7rem;
     color: #fff;
     text-decoration: underline;
 }
@@ -687,7 +706,7 @@ body{
         padding: 8% 4%;
     }
     .portrait_photo .portrait_photo_row .box{
-        height: 120px;
+        height: 160px;
     }
 
 
@@ -695,7 +714,16 @@ body{
         padding: 8% 10%;
     }
     .dog_photo .dog_photo_row .box{
-        height: 120px;
+        flex: 1;
+        height: 140px;
+        margin: 4px;
+        text-align: center;
+    }
+    .dog_photo .dog_photo_row .box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
     }
 
     .about_wrap{
@@ -758,15 +786,21 @@ body{
         padding-left: 1rem;
     }
     .portrait_photo .portrait_photo_row .box{
-        height: 100px;
+        height: 160px;
+        margin: 4px;
     }
     .portrait_full{
         padding: 2rem 4% 66%;
     }
+    .portrait_full img{
+        width: 80%;
+    }
+
 
 
     .dog_photo .dog_photo_row .box{
-        height: 100px;
+        height: 140px;
+        margin: 4px;
     }
     .dog_full{
         padding: 2rem 4% 66%;
@@ -863,10 +897,10 @@ body{
 
     
     .portrait_photo .portrait_photo_row .box{
-        height: 80px;
+        height: 120px;
     }
     .portrait_photo .portrait_photo_row .box img{
-        width: 75%;
+        width: 100%;
     }
 
     .portrait_full img{
@@ -879,14 +913,14 @@ body{
 
 
     .dog_photo.active{
-        padding: 8% 2%;
+        padding: 8% 5%;
     }
     .dog_photo .dog_photo_row .box{
-        height: 80px;
+        height: 100px;
         margin: 4px;
     }
     .dog_photo .dog_photo_row .box img{
-        width: 75%;
+        width: 100%;
     }
 
     .dog_full img{
