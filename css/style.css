@@ -516,10 +516,10 @@ body{
     width: 33.33333%;
     text-align: center;
 }
-.contact_container .contact_wrap .contact_row i{
+.contact_container .contact_wrap .contact_row i.icon{
     display: none;
     padding-right: 4px;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #fff;
 }
 .contact_container .contact_wrap .contact_row h3{
@@ -539,6 +539,14 @@ body{
 }
 .contact_container .contact_wrap .contact_row p span{
     font-family: 'Courier Prime', monospace;
+}
+.contact_container .contact_wrap .contact_row p i{
+    font-size: 1px;
+    padding-right: 7px;
+    vertical-align: 1px;
+}
+.contact_container .contact_wrap .contact_row p span i.fa-star-of-life{
+    font-size: .7rem;
 }
 .contact_container .contact_wrap .contact_row .sns a{
     margin: 0 1rem;
@@ -650,13 +658,16 @@ body{
 
 
     .navbar{
-        top: 50%;
+        top: 47%;
     }
     .navbar > ul > li{
-        font-size: 1.7rem;
+        font-size: 2.3rem;
+    }
+    .navbar > ul > li > ul > li{
+        padding: .2rem 0;
     }
     .navbar > ul > li > ul > li > a{
-        font-size: 1.3rem;
+        font-size: 2.1rem;
     }
     .navbar > ul > li > ul{
         width: 100%;
@@ -742,7 +753,7 @@ body{
     .contact_container .contact_wrap .contact_row h3{
         font-size: 2rem;
     }
-    .contact_container .contact_wrap .contact_row h3 i{
+    .contact_container .contact_wrap .contact_row h3 i.icon{
         display: inline-block;
         font-size: 1.5rem;
     }
@@ -832,14 +843,6 @@ body{
     }
     .mainpage .maintitle img{
         width: 100%;
-    }
-    
-
-    .navbar{
-        top: 45%;
-    }
-    .navbar > ul > li > ul{
-        top: 6.4%;
     }
 
 
