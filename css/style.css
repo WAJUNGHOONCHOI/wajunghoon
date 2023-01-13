@@ -610,11 +610,6 @@ body{
 .contact_container .contact_wrap .contact_row p span{
     font-family: 'Courier Prime', monospace;
 }
-.contact_container .contact_wrap .contact_row p i{
-    font-size: 1px;
-    padding-right: 7px;
-    vertical-align: 1px;
-}
 .contact_container .contact_wrap .contact_row p span i.fa-star-of-life{
     font-size: .7rem;
 }
@@ -689,7 +684,7 @@ body{
 
 
     .portrait_photo.active{
-        padding: 8% 10%;
+        padding: 8% 4%;
     }
     .portrait_photo .portrait_photo_row .box{
         height: 120px;
@@ -759,6 +754,9 @@ body{
 
     
     
+    .portrait_photo .logo{
+        padding-left: 1rem;
+    }
     .portrait_photo .portrait_photo_row .box{
         height: 100px;
     }
@@ -872,7 +870,7 @@ body{
     }
 
     .portrait_full img{
-        width: 70%;
+        width: 92%;
     }
     .portrait_full span{
         font-size: 27px;
@@ -880,8 +878,12 @@ body{
 
 
 
+    .dog_photo.active{
+        padding: 8% 2%;
+    }
     .dog_photo .dog_photo_row .box{
         height: 80px;
+        margin: 4px;
     }
     .dog_photo .dog_photo_row .box img{
         width: 75%;
@@ -962,17 +964,22 @@ body{
 
     .portrait_photo .portrait_photo_row .box{
         height: 90px;
+        margin: 4px;
     }
     .portrait_photo .portrait_photo_row .box img{
-        width: 85%;
+        width: 95%;
+    }
+
+    .portrait_photo .portrait_full img{
+        width: 90%;
     }
 
 
     .dog_photo .dog_photo_row .box{
-        height: 60px;
+        height: 80px;
     }
     .dog_photo .dog_photo_row .box img{
-        width: 85%;
+        width: 100%;
     }
 
 
