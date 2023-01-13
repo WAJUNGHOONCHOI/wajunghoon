@@ -72,9 +72,6 @@ const $dogFull28 = document.querySelector('.dog_box_28_full');
 
 $dog.addEventListener('click', () => {
     $dogPhoto.classList.add('active');
-    $faq_container.classList.remove('active');
-    $aboutWrap.classList.remove('active');
-    $contact_container.classList.remove('active');
 });
 
 
@@ -280,10 +277,6 @@ const $maruWrap = document.querySelector('.maru_wrap');
 
 $maruAbout.addEventListener('click', () => {
     $maruWrap.classList.toggle('active');
-    $aboutWrap.classList.remove('active');
-    $designPhoto.classList.remove('active');
-    $faq_container.classList.remove('active');
-    $contact_container.classList.remove('active');
 })
 
 document.querySelector('.maru_wrap .logo').addEventListener('click', () => {
@@ -301,9 +294,6 @@ const $aboutWrap = document.querySelector('.about_wrap');
 
 $about.addEventListener('click', () => {
     $aboutWrap.classList.toggle('active');
-    $designPhoto.classList.remove('active');
-    $faq_container.classList.remove('active');
-    $contact_container.classList.remove('active');
 });
 
 
@@ -331,10 +321,7 @@ const $faq_container = document.querySelector('.faq_container');
 
 
 $faqs.addEventListener('click', () => {
-    $faq_container.classList.add('active');
-    $aboutWrap.classList.remove('active');
-    $designPhoto.classList.remove('active');
-    $contact_container.classList.remove('active');
+    $faq_container.classList.toggle('active');
 });
 
 document.querySelector('.faq_container .logo').addEventListener('click', () => {
@@ -479,76 +466,3 @@ $faqQ08.addEventListener('click', () => {
 $faqIn08.addEventListener('click', () => {
     $faqIn08.classList.remove('active');
 });
-
-
-
-
-
-
-
-
-// contact -----------------------------------
-
-const $contact = document.querySelector('#contact');
-const $contact_container = document.querySelector('.contact_container');
-
-$contact.addEventListener('click', ()=> {
-    $contact_container.classList.add('active');
-    $faq_container.classList.remove('active');
-    $aboutWrap.classList.remove('active');
-    $designPhoto.classList.remove('active');
-});
-
-document.querySelector('.contact_container .contact_wrap .logo').addEventListener('click', () => {
-    $contact_container.classList.remove('active');
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
