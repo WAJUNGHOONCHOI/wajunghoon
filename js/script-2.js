@@ -1,3 +1,8 @@
+// portrait , food , contact 
+
+
+
+
 const $portrait = document.querySelector('#portrait');
 const $portraitPhoto = document.querySelector('.portrait_photo');
 const $portraitPhotoBox = document.querySelector('.portrait_photo .box');
@@ -94,44 +99,56 @@ $portraitPhotoBox08.addEventListener('click', () => {
 });
 
 $portraitPhotoBox09.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull09.classList.toggle('active');
 });
 
 $portraitPhotoBox10.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull10.classList.toggle('active');
 });
 
 $portraitPhotoBox11.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull11.classList.toggle('active');
 });
 
 $portraitPhotoBox12.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull12.classList.toggle('active');
 });
 
 $portraitPhotoBox13.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull13.classList.toggle('active');
 });
 
 $portraitPhotoBox14.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull14.classList.toggle('active');
 });
 $portraitPhotoBox15.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull15.classList.toggle('active');
 });
 $portraitPhotoBox16.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull16.classList.toggle('active');
 });
 $portraitPhotoBox17.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull17.classList.toggle('active');
 });
 $portraitPhotoBox18.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull18.classList.toggle('active');
 });
 $portraitPhotoBox19.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull19.classList.toggle('active');
 });
 $portraitPhotoBox20.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $portraitFull20.classList.toggle('active');
 });
 
@@ -199,7 +216,107 @@ document.querySelector('.portrait_box_20_full span').onclick = () =>{
 };
 
 
-// contact ------
+
+
+
+// ------ food ------
+
+
+const $food = document.querySelector('#food');
+const $foodPhotoWrap = document.querySelector('.food_photo')
+const $foodPhotoLogo = document.querySelector('.food_photo .logo')
+
+
+$food.addEventListener('click', () => {
+    $foodPhotoWrap.classList.toggle('active')
+});
+$foodPhotoLogo.addEventListener('click', () => {
+    $foodPhotoWrap.classList.remove('active');
+});
+
+
+const $foodPhotoBox01 = document.querySelector('.food_photo .box_01');
+const $foodPhotoBox02 = document.querySelector('.food_photo .box_02');
+const $foodPhotoBox03 = document.querySelector('.food_photo .box_03');
+const $foodPhotoBox04 = document.querySelector('.food_photo .box_04');
+const $foodPhotoBox05 = document.querySelector('.food_photo .box_05');
+const $foodPhotoBox06 = document.querySelector('.food_photo .box_06');
+const $foodPhotoBox07 = document.querySelector('.food_photo .box_07');
+const $foodPhotoBox08 = document.querySelector('.food_photo .box_08');
+
+const $foodFull01 = document.querySelector('.food_box_01_full');
+const $foodFull02 = document.querySelector('.food_box_02_full');
+const $foodFull03 = document.querySelector('.food_box_03_full');
+const $foodFull04 = document.querySelector('.food_box_04_full');
+const $foodFull05 = document.querySelector('.food_box_05_full');
+const $foodFull06 = document.querySelector('.food_box_06_full');
+const $foodFull07 = document.querySelector('.food_box_07_full');
+const $foodFull08 = document.querySelector('.food_box_08_full');
+
+
+
+$foodPhotoBox01.addEventListener('click', () => {
+    $foodFull01.classList.toggle('active');
+});
+
+$foodPhotoBox02.addEventListener('click', () => {
+    $foodFull02.classList.toggle('active');
+});
+
+$foodPhotoBox03.addEventListener('click', () => {
+    $foodFull03.classList.toggle('active');
+});
+
+$foodPhotoBox04.addEventListener('click', () => {
+    $foodFull04.classList.toggle('active');
+});
+
+$foodPhotoBox05.addEventListener('click', () => {
+    $foodFull05.classList.toggle('active');
+});
+
+$foodPhotoBox06.addEventListener('click', () => {
+    $foodFull06.classList.toggle('active');
+});
+
+$foodPhotoBox07.addEventListener('click', () => {
+    $foodFull07.classList.toggle('active');
+});
+
+$foodPhotoBox08.addEventListener('click', () => {
+    $foodFull08.classList.toggle('active');
+});
+
+
+
+document.querySelector('.food_box_01_full span').onclick = () =>{
+    $foodFull01.classList.remove('active');
+};
+document.querySelector('.food_box_02_full span').onclick = () =>{
+    $foodFull02.classList.remove('active');
+};
+document.querySelector('.food_box_03_full span').onclick = () =>{
+    $foodFull03.classList.remove('active');
+};
+document.querySelector('.food_box_04_full span').onclick = () =>{
+    $foodFull04.classList.remove('active');
+};
+document.querySelector('.food_box_05_full span').onclick = () =>{
+    $foodFull05.classList.remove('active');
+};
+document.querySelector('.food_box_06_full span').onclick = () =>{
+    $foodFull06.classList.remove('active');
+};
+document.querySelector('.food_box_07_full span').onclick = () =>{
+    $foodFull07.classList.remove('active');
+};
+document.querySelector('.food_box_08_full span').onclick = () =>{
+    $foodFull08.classList.remove('active');
+};
+
+
+
+// ------ contact -------
 
 const $contact = document.querySelector('#contact');
 const $contactContainer = document.querySelector('.contact_container');
@@ -211,3 +328,14 @@ $contact.addEventListener('click', () => {
 document.querySelector('.contact_container .logo').addEventListener('click', () => {
     $contactContainer.classList.remove('active');
 });
+
+
+
+
+
+
+
+
+
+
+

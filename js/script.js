@@ -1,3 +1,10 @@
+// dog , about maru , about midori, faqs
+
+
+
+
+
+
 // dog -----------------------------------
 
 
@@ -7,6 +14,14 @@ const $dogPhotoBox = document.querySelector('.dog_photo .box');
 const $dog_full = document.querySelector('.dog_full');
 
 
+$dog.addEventListener('click', () => {
+    $dogPhoto.classList.add('active');
+});
+
+
+document.querySelector('.dog_photo .logo').addEventListener('click', () => {
+    $dogPhoto.classList.remove('active');
+});
 
 
 const $dogPhotoBox01 = document.querySelector('.dog_photo .box_01');
@@ -37,6 +52,18 @@ const $dogPhotoBox25 = document.querySelector('.dog_photo .box_25');
 const $dogPhotoBox26 = document.querySelector('.dog_photo .box_26');
 const $dogPhotoBox27 = document.querySelector('.dog_photo .box_27');
 const $dogPhotoBox28 = document.querySelector('.dog_photo .box_28');
+const $dogPhotoBox29 = document.querySelector('.dog_photo .box_29');
+const $dogPhotoBox30 = document.querySelector('.dog_photo .box_30');
+const $dogPhotoBox31 = document.querySelector('.dog_photo .box_31');
+const $dogPhotoBox32 = document.querySelector('.dog_photo .box_32');
+const $dogPhotoBox33 = document.querySelector('.dog_photo .box_33');
+const $dogPhotoBox34 = document.querySelector('.dog_photo .box_34');
+const $dogPhotoBox35 = document.querySelector('.dog_photo .box_35');
+const $dogPhotoBox36 = document.querySelector('.dog_photo .box_36');
+const $dogPhotoBox37 = document.querySelector('.dog_photo .box_37');
+const $dogPhotoBox38 = document.querySelector('.dog_photo .box_38');
+const $dogPhotoBox39 = document.querySelector('.dog_photo .box_39');
+const $dogPhotoBox40 = document.querySelector('.dog_photo .box_40');
 
 
 
@@ -68,16 +95,20 @@ const $dogFull25 = document.querySelector('.dog_box_25_full');
 const $dogFull26 = document.querySelector('.dog_box_26_full');
 const $dogFull27 = document.querySelector('.dog_box_27_full');
 const $dogFull28 = document.querySelector('.dog_box_28_full');
+const $dogFull29 = document.querySelector('.dog_box_29_full');
+const $dogFull30 = document.querySelector('.dog_box_30_full');
+const $dogFull31 = document.querySelector('.dog_box_31_full');
+const $dogFull32 = document.querySelector('.dog_box_32_full');
+const $dogFull33 = document.querySelector('.dog_box_33_full');
+const $dogFull34 = document.querySelector('.dog_box_34_full');
+const $dogFull35 = document.querySelector('.dog_box_35_full');
+const $dogFull36 = document.querySelector('.dog_box_36_full');
+const $dogFull37 = document.querySelector('.dog_box_37_full');
+const $dogFull38 = document.querySelector('.dog_box_38_full');
+const $dogFull39 = document.querySelector('.dog_box_39_full');
+const $dogFull40 = document.querySelector('.dog_box_40_full');
 
 
-$dog.addEventListener('click', () => {
-    $dogPhoto.classList.add('active');
-});
-
-
-document.querySelector('.dog_photo .logo').addEventListener('click', () => {
-    $dogPhoto.classList.remove('active');
-});
 
 
 $dogPhotoBox01.addEventListener('click', () => {
@@ -129,54 +160,119 @@ $dogPhotoBox12.addEventListener('click', () => {
 });
 
 $dogPhotoBox13.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull13.classList.toggle('active');
 });
 
 $dogPhotoBox14.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull14.classList.toggle('active');
 });
 $dogPhotoBox15.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull15.classList.toggle('active');
 });
 $dogPhotoBox16.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull16.classList.toggle('active');
 });
 $dogPhotoBox17.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull17.classList.toggle('active');
 });
 $dogPhotoBox18.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull18.classList.toggle('active');
 });
 $dogPhotoBox19.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull19.classList.toggle('active');
 });
 $dogPhotoBox20.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull20.classList.toggle('active');
 });
 $dogPhotoBox21.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull21.classList.toggle('active');
 });
 $dogPhotoBox22.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull22.classList.toggle('active');
 });
 $dogPhotoBox23.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull23.classList.toggle('active');
 });
 $dogPhotoBox24.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull24.classList.toggle('active');
 });
 $dogPhotoBox25.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull25.classList.toggle('active');
 });
 $dogPhotoBox26.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull26.classList.toggle('active');
 });
 $dogPhotoBox27.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull27.classList.toggle('active');
 });
 $dogPhotoBox28.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
     $dogFull28.classList.toggle('active');
 });
+$dogPhotoBox29.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull29.classList.toggle('active');
+});
+$dogPhotoBox30.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull30.classList.toggle('active');
+});
+$dogPhotoBox31.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull31.classList.toggle('active');
+});
+$dogPhotoBox32.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull32.classList.toggle('active');
+});
+$dogPhotoBox33.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull33.classList.toggle('active');
+});
+$dogPhotoBox34.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull34.classList.toggle('active');
+});
+$dogPhotoBox35.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull35.classList.toggle('active');
+});
+$dogPhotoBox36.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull36.classList.toggle('active');
+});
+$dogPhotoBox37.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull37.classList.toggle('active');
+});
+$dogPhotoBox38.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull38.classList.toggle('active');
+});
+$dogPhotoBox39.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull39.classList.toggle('active');
+});
+$dogPhotoBox40.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $dogFull40.classList.toggle('active');
+});
+
 
 
 
@@ -263,6 +359,42 @@ document.querySelector('.dog_box_27_full span').onclick = () =>{
 };
 document.querySelector('.dog_box_28_full span').onclick = () =>{
     $dogFull28.classList.remove('active');
+};
+document.querySelector('.dog_box_29_full span').onclick = () =>{
+    $dogFull29.classList.remove('active');
+};
+document.querySelector('.dog_box_30_full span').onclick = () =>{
+    $dogFull30.classList.remove('active');
+};
+document.querySelector('.dog_box_31_full span').onclick = () =>{
+    $dogFull31.classList.remove('active');
+};
+document.querySelector('.dog_box_32_full span').onclick = () =>{
+    $dogFull32.classList.remove('active');
+};
+document.querySelector('.dog_box_33_full span').onclick = () =>{
+    $dogFull33.classList.remove('active');
+};
+document.querySelector('.dog_box_34_full span').onclick = () =>{
+    $dogFull34.classList.remove('active');
+};
+document.querySelector('.dog_box_35_full span').onclick = () =>{
+    $dogFull35.classList.remove('active');
+};
+document.querySelector('.dog_box_36_full span').onclick = () =>{
+    $dogFull36.classList.remove('active');
+};
+document.querySelector('.dog_box_37_full span').onclick = () =>{
+    $dogFull37.classList.remove('active');
+};
+document.querySelector('.dog_box_38_full span').onclick = () =>{
+    $dogFull38.classList.remove('active');
+};
+document.querySelector('.dog_box_39_full span').onclick = () =>{
+    $dogFull39.classList.remove('active');
+};
+document.querySelector('.dog_box_40_full span').onclick = () =>{
+    $dogFull40.classList.remove('active');
 };
 
 

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Josefin+Sans:wght@200;300;400&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -239,9 +240,6 @@ body{
 
 .dog_photo{
     display: none;
-}
-.dog_photo.active{
-    display: block;
     width: 100%;
     height: 100%;
     padding: 3% 10%;
@@ -250,6 +248,9 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     background: #000;
+}
+.dog_photo.active{
+    display: block;
 }
 
 
@@ -287,7 +288,7 @@ body{
     display: none;
     width: 100vw;
     height: 100vh;
-    padding: 4rem 4% 35%;
+    padding: 4rem 4% 80%;
     text-align: center;
     background:rgba(0, 0, 0, .9);
     position: relative;
@@ -322,6 +323,93 @@ body{
     padding-top: 80px;
 }
 
+
+/* ----- dog ends ----- */
+
+
+
+
+/* ----- food starts ----- */
+
+.food_photo{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 3% 10%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+}
+.food_photo.active{
+    display: block;
+}
+
+
+.food_photo .food_photo_row{
+    display: flex;
+    background: #000;
+}
+.food_photo .food_photo_row .box{
+    flex: 1;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+}
+.food_photo .food_photo_row .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+
+
+.food_full_page{
+    position: absolute;
+    left: 0; right: 0;
+    top: 0;
+}
+.food_full_page.active{
+    width: 100%;
+    height: 100%;
+}
+.food_full{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding: 4rem 4% 80%;
+    text-align: center;
+    background:rgba(0, 0, 0, .9);
+    position: relative;
+}
+.food_full.active{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.food_full img{
+    width: 50%;
+    padding-bottom: 50%;
+    object-fit: cover;
+}
+.food_full span{
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    cursor: pointer;
+    z-index: 99;
+}
+
+/* ----- food ends ----- */
 
 
 
@@ -358,8 +446,9 @@ body{
 }
 .maru_wrap .introduce p{
     line-height: 2;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
+    font-weight: 200;
     text-transform: none;
     word-break: keep-all;
     color: #fff;
@@ -436,7 +525,7 @@ body{
     text-align: center;
 }
 .about_wrap .midori_say p{
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
     letter-spacing: -1px;
     text-transform: none;
@@ -448,6 +537,7 @@ body{
     padding-bottom: 100px;
 }
 .about_wrap .profile p{
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.7rem;
     word-break: keep-all;
 }
@@ -525,8 +615,9 @@ body{
     color: #fff;
 }
 .faq_container .faq_wrap .faqs p{
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
+    font-weight: 400;
     text-transform: none;
     letter-spacing: -1px;
     word-break: keep-all;
@@ -561,6 +652,7 @@ body{
     margin-top: 30px;
     margin-bottom: 10px;
     line-height: 1.5;
+    font-weight: 200;
     word-break: keep-all;
 }
 
@@ -691,7 +783,11 @@ body{
 
 
 
-@media (max-width:1680px){
+@media (max-width:1200px){
+    .dog_photo .dog_photo_row .box img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -719,12 +815,25 @@ body{
         margin: 4px;
         text-align: center;
     }
-    .dog_photo .dog_photo_row .box img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        cursor: pointer;
+
+
+    .dog_full{
+        padding-bottom: 53%;
     }
+    .dog_full img{
+        width: 80%;
+    }
+
+
+
+    .food_photo.active{
+        padding: 8% 4%;
+    }
+    .food_photo .food_photo_row .box{
+        height: 160px;
+    }
+
+
 
     .about_wrap{
         padding: 8% 10%;
@@ -790,7 +899,7 @@ body{
         margin: 4px;
     }
     .portrait_full{
-        padding: 2rem 4% 66%;
+        padding: 2rem 4% 125%;
     }
     .portrait_full img{
         width: 80%;
@@ -803,8 +912,27 @@ body{
         margin: 4px;
     }
     .dog_full{
-        padding: 2rem 4% 66%;
+        padding: 25% 4% 124%;
     }
+
+
+
+    .food_photo .logo{
+        padding-left: 1rem;
+    }
+    .food_photo .food_photo_row .box{
+        height: 160px;
+        margin: 4px;
+    }
+    .food_full{
+        padding:  15% 4% 125%;
+    }
+    .food_full img{
+        width: 80%;
+    }
+
+
+
 
 
     .maru_wrap{
@@ -927,6 +1055,22 @@ body{
         width: 90%;
     }
     .dog_full span{
+        font-size: 45px;
+    }
+
+
+
+    .food_photo .food_photo_row .box{
+        height: 130px;
+    }
+    .food_photo .food_photo_row .box img{
+        width: 100%;
+    }
+
+    .food_full img{
+        width: 92%;
+    }
+    .food_full span{
         font-size: 27px;
     }
 
@@ -1014,6 +1158,18 @@ body{
     }
     .dog_photo .dog_photo_row .box img{
         width: 100%;
+    }
+
+
+    .food_photo .food_photo_row .box{
+        height: 90px;
+    }
+    .food_photo .food_photo_row .box img{
+        width: 95%;
+    }
+
+    .food_photo .food_full img{
+        width: 90%;
     }
 
 
