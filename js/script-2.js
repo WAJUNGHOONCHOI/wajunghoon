@@ -1,4 +1,4 @@
-// portrait , food , contact 
+// portrait , food , snap , contact 
 
 
 
@@ -313,6 +313,56 @@ document.querySelector('.food_box_07_full span').onclick = () =>{
 document.querySelector('.food_box_08_full span').onclick = () =>{
     $foodFull08.classList.remove('active');
 };
+
+
+
+
+
+// ----- food
+
+const $snap = document.querySelector('#snap');
+const $snapPhoto = document.querySelector('.snap_photo');
+const $snapPhotoBox = document.querySelector('.snap_photo .box');
+const $snap_full = document.querySelector('.snap_full');
+
+
+$snap.addEventListener('click', () => {
+    $snapPhoto.classList.add('active');
+});
+
+
+document.querySelector('.snap_photo .logo').addEventListener('click', () => {
+    $snapPhoto.classList.remove('active');
+});
+
+
+const $snapPhotoBox01 = document.querySelector('.snap_photo .box_01');
+const $snapPhotoBox02 = document.querySelector('.snap_photo .box_02');
+
+const $snapFull01 = document.querySelector('.snap_box_01_full');
+const $snapFull02 = document.querySelector('.snap_box_02_full');
+
+
+$snapPhotoBox01.addEventListener('click', () => {
+    $snapFull01.classList.toggle('active');
+});
+
+$snapPhotoBox02.addEventListener('click', () => {
+    $snapFull02.classList.toggle('active');
+});
+
+
+
+
+document.querySelector('.snap_box_01_full span').onclick = () =>{
+    $snapFull01.classList.remove('active');
+};
+document.querySelector('.snap_box_02_full span').onclick = () =>{
+    $snapFull02.classList.remove('active');
+};
+
+
+
 
 
 

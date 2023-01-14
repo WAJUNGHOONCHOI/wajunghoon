@@ -39,7 +39,7 @@ body{
     margin-bottom: 10px;
 }
 .logo_title p{
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     color: #fff;
 }
@@ -93,7 +93,7 @@ body{
 
 .navbar > ul li{
     line-height: 1;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     color: #fff;
 }
 
@@ -112,7 +112,7 @@ body{
     width: 100%;
 }
 .navbar > ul > li > ul > li a{
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 17px;
     color: rgba(255, 255, 255, .7)
 }
@@ -414,6 +414,113 @@ body{
 
 
 
+
+/* ----- snap starts ----- */
+
+.snap_photo{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 3% 10% 3%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+}
+.snap_photo.active{
+    display: block;
+}
+
+
+.snap_photo .logo{
+    padding-bottom: 1.3rem;
+}
+
+
+.snap_photo .snap_photo_row{
+    display: flex;
+    background: #000;
+}
+.snap_photo .snap_photo_row .box{
+    width: 25%;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+}
+.snap_photo .snap_photo_row .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+
+
+.snap_full_page{
+    position: absolute;
+    left: 0; right: 0;
+    top: 0;
+}
+.snap_full_page.active{
+    width: 100%;
+    height: 100%;
+}
+.snap_full{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding: 4rem 4% 35%;
+    text-align: center;
+    background:rgba(0, 0, 0, .9);
+    position: relative;
+}
+.snap_full.active{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.snap_full img{
+    width: 50%;
+    margin-bottom: 5%;
+    object-fit: cover;
+}
+.snap_full span{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    position: fixed;
+    right: 2%;
+    top: 0%;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.portrait_box_10_full,
+.portrait_box_11_full,
+.portrait_box_12_full,
+.portrait_box_14_full,
+.portrait_box_17_full,
+.portrait_box_18_full{
+    background: rgba(255, 255, 255, .7);
+}
+.portrait_box_10_full span,
+.portrait_box_11_full span,
+.portrait_box_12_full span,
+.portrait_box_14_full span,
+.portrait_box_17_full span,
+.portrait_box_18_full span{
+    color: #000;
+}
+
+/* ----- snap ends ----- */
+
+
+
+
+
 /* ----- maru wrap starts ----- */
 
 .maru_wrap{
@@ -448,7 +555,6 @@ body{
     line-height: 2;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
-    font-weight: 200;
     text-transform: none;
     word-break: keep-all;
     color: #fff;
@@ -503,14 +609,15 @@ body{
     padding-bottom: .5rem;
 }
 .about_wrap .photographer p{
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
     letter-spacing: -2px;
     text-transform: none;
 }
 .about_wrap .photographer p span{
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
+    font-weight: 200;
     letter-spacing: -1px;
 }
 
@@ -539,6 +646,7 @@ body{
 .about_wrap .profile p{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.7rem;
+    font-weight: 200;
     word-break: keep-all;
 }
 .about_wrap .profile span{
@@ -704,24 +812,24 @@ body{
 }
 .contact_container .contact_wrap .contact_row h3{
     padding: 1rem 0 3rem;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
     color: #fff;
 }
 .contact_container .contact_wrap .contact_row p{
     margin-bottom: 3rem;
     line-height: 2;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
     word-break: keep-all;
     text-transform: lowercase;
     color: #fff;
 }
 .contact_container .contact_wrap .contact_row p span{
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .contact_container .contact_wrap .contact_row p span i.fa-star-of-life{
-    font-size: .7rem;
+    font-size: .2rem;
 }
 .contact_container .contact_wrap .contact_row .sns a{
     margin: 0 1rem;
@@ -730,7 +838,7 @@ body{
 .contact_container .contact_wrap .contact_row p .googlemap{
     display: inline-block;
     padding-top: 10px;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.7rem;
     color: #fff;
     text-decoration: underline;
@@ -834,6 +942,14 @@ body{
     }
 
 
+    .snap_photo.active{
+        padding: 8% 4%;
+    }
+    .snap_photo .snap_photo_row .box{
+        height: 160px;
+    }
+
+
 
     .about_wrap{
         padding: 8% 10%;
@@ -928,6 +1044,22 @@ body{
         padding:  15% 4% 125%;
     }
     .food_full img{
+        width: 80%;
+    }
+
+
+
+    .snap_photo .logo{
+        padding-left: 1rem;
+    }
+    .snap_photo .snap_photo_row .box{
+        height: 160px;
+        margin: 4px;
+    }
+    .snap_full{
+        padding:  15% 4% 125%;
+    }
+    .snap_full img{
         width: 80%;
     }
 
@@ -1076,6 +1208,22 @@ body{
 
 
 
+    .snap_photo .snap_photo_row .box{
+        height: 130px;
+    }
+    .snap_photo .snap_photo_row .box img{
+        width: 100%;
+    }
+
+    .snap_full img{
+        width: 92%;
+    }
+    .snap_full span{
+        font-size: 27px;
+    }
+
+
+
     .maru_wrap{
         padding: 10% 10% 7%;
     }
@@ -1171,6 +1319,20 @@ body{
     .food_photo .food_full img{
         width: 90%;
     }
+
+
+
+    .snap_photo .snap_photo_row .box{
+        height: 90px;
+    }
+    .snap_photo .snap_photo_row .box img{
+        width: 95%;
+    }
+
+    .snap_photo .snap_full img{
+        width: 90%;
+    }
+
 
 
     .about_wrap .logo > div p{
