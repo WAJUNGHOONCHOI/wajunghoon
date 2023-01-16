@@ -318,17 +318,31 @@ document.querySelector('.food_box_08_full span').onclick = () =>{
 
 
 
-// ----- food
+// ----- snap
 
 const $snap = document.querySelector('#snap');
 const $snapPhoto = document.querySelector('.snap_photo');
-const $snapPhotoBox = document.querySelector('.snap_photo .box');
-const $snap_full = document.querySelector('.snap_full');
 
 
 $snap.addEventListener('click', () => {
     $snapPhoto.classList.add('active');
 });
+
+// document.querySelectorAll('.snap_photo_row img').forEach(image => {
+//     image.onclick = () => {
+//         document.querySelector('.snap_full').style.display = 'block';
+//         document.querySelector('.snap_full img').src = image.getAttribute('src');
+//     }
+// })
+// document.querySelector('.snap_full span').onclick = () => {
+//     document.querySelector('.snap_full').style.display = 'none';
+// }
+
+
+const $snapPhotoBox = document.querySelector('.snap_photo .box');
+const $snap_full = document.querySelector('.snap_full');
+
+
 
 
 document.querySelector('.snap_photo .logo').addEventListener('click', () => {
