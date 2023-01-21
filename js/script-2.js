@@ -154,64 +154,64 @@ $portraitPhotoBox20.addEventListener('click', () => {
 
 
 
-document.querySelector('.portrait_box_01_full span').onclick = () =>{
+document.querySelector('.portrait_box_01_full').onclick = () =>{
     $portraitFull01.classList.remove('active');
 };
-document.querySelector('.portrait_box_02_full span').onclick = () =>{
+document.querySelector('.portrait_box_02_full').onclick = () =>{
     $portraitFull02.classList.remove('active');
 };
-document.querySelector('.portrait_box_03_full span').onclick = () =>{
+document.querySelector('.portrait_box_03_full').onclick = () =>{
     $portraitFull03.classList.remove('active');
 };
-document.querySelector('.portrait_box_04_full span').onclick = () =>{
+document.querySelector('.portrait_box_04_full').onclick = () =>{
     $portraitFull04.classList.remove('active');
 };
-document.querySelector('.portrait_box_05_full span').onclick = () =>{
+document.querySelector('.portrait_box_05_full').onclick = () =>{
     $portraitFull05.classList.remove('active');
 };
-document.querySelector('.portrait_box_06_full span').onclick = () =>{
+document.querySelector('.portrait_box_06_full').onclick = () =>{
     $portraitFull06.classList.remove('active');
 };
-document.querySelector('.portrait_box_07_full span').onclick = () =>{
+document.querySelector('.portrait_box_07_full').onclick = () =>{
     $portraitFull07.classList.remove('active');
 };
-document.querySelector('.portrait_box_08_full span').onclick = () =>{
+document.querySelector('.portrait_box_08_full').onclick = () =>{
     $portraitFull08.classList.remove('active');
 };
-document.querySelector('.portrait_box_09_full span').onclick = () =>{
+document.querySelector('.portrait_box_09_full').onclick = () =>{
     $portraitFull09.classList.remove('active');
 };
-document.querySelector('.portrait_box_10_full span').onclick = () =>{
+document.querySelector('.portrait_box_10_full').onclick = () =>{
     $portraitFull10.classList.remove('active');
 };
-document.querySelector('.portrait_box_11_full span').onclick = () =>{
+document.querySelector('.portrait_box_11_full').onclick = () =>{
     $portraitFull11.classList.remove('active');
 };
-document.querySelector('.portrait_box_12_full span').onclick = () =>{
+document.querySelector('.portrait_box_12_full').onclick = () =>{
     $portraitFull12.classList.remove('active');
 };
-document.querySelector('.portrait_box_13_full span').onclick = () =>{
+document.querySelector('.portrait_box_13_full').onclick = () =>{
     $portraitFull13.classList.remove('active');
 };
-document.querySelector('.portrait_box_14_full span').onclick = () =>{
+document.querySelector('.portrait_box_14_full').onclick = () =>{
     $portraitFull14.classList.remove('active');
 };
-document.querySelector('.portrait_box_15_full span').onclick = () =>{
+document.querySelector('.portrait_box_15_full').onclick = () =>{
     $portraitFull15.classList.remove('active');
 };
-document.querySelector('.portrait_box_16_full span').onclick = () =>{
+document.querySelector('.portrait_box_16_full').onclick = () =>{
     $portraitFull16.classList.remove('active');
 };
-document.querySelector('.portrait_box_17_full span').onclick = () =>{
+document.querySelector('.portrait_box_17_full').onclick = () =>{
     $portraitFull17.classList.remove('active');
 };
-document.querySelector('.portrait_box_18_full span').onclick = () =>{
+document.querySelector('.portrait_box_18_full').onclick = () =>{
     $portraitFull18.classList.remove('active');
 };
-document.querySelector('.portrait_box_19_full span').onclick = () =>{
+document.querySelector('.portrait_box_19_full').onclick = () =>{
     $portraitFull19.classList.remove('active');
 };
-document.querySelector('.portrait_box_20_full span').onclick = () =>{
+document.querySelector('.portrait_box_20_full').onclick = () =>{
     $portraitFull20.classList.remove('active');
 };
 
@@ -289,28 +289,28 @@ $foodPhotoBox08.addEventListener('click', () => {
 
 
 
-document.querySelector('.food_box_01_full span').onclick = () =>{
+document.querySelector('.food_box_01_full').onclick = () =>{
     $foodFull01.classList.remove('active');
 };
-document.querySelector('.food_box_02_full span').onclick = () =>{
+document.querySelector('.food_box_02_full').onclick = () =>{
     $foodFull02.classList.remove('active');
 };
-document.querySelector('.food_box_03_full span').onclick = () =>{
+document.querySelector('.food_box_03_full').onclick = () =>{
     $foodFull03.classList.remove('active');
 };
-document.querySelector('.food_box_04_full span').onclick = () =>{
+document.querySelector('.food_box_04_full').onclick = () =>{
     $foodFull04.classList.remove('active');
 };
-document.querySelector('.food_box_05_full span').onclick = () =>{
+document.querySelector('.food_box_05_full').onclick = () =>{
     $foodFull05.classList.remove('active');
 };
-document.querySelector('.food_box_06_full span').onclick = () =>{
+document.querySelector('.food_box_06_full').onclick = () =>{
     $foodFull06.classList.remove('active');
 };
-document.querySelector('.food_box_07_full span').onclick = () =>{
+document.querySelector('.food_box_07_full').onclick = () =>{
     $foodFull07.classList.remove('active');
 };
-document.querySelector('.food_box_08_full span').onclick = () =>{
+document.querySelector('.food_box_08_full').onclick = () =>{
     $foodFull08.classList.remove('active');
 };
 
@@ -368,10 +368,10 @@ $snapPhotoBox02.addEventListener('click', () => {
 
 
 
-document.querySelector('.snap_box_01_full span').onclick = () =>{
+document.querySelector('.snap_box_01_full').onclick = () =>{
     $snapFull01.classList.remove('active');
 };
-document.querySelector('.snap_box_02_full span').onclick = () =>{
+document.querySelector('.snap_box_02_full').onclick = () =>{
     $snapFull02.classList.remove('active');
 };
 

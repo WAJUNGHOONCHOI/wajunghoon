@@ -276,103 +276,103 @@ $dogPhotoBox40.addEventListener('click', () => {
 
 
 
-document.querySelector('.dog_box_01_full span').onclick = () =>{
+document.querySelector('.dog_box_01_full').onclick = () =>{
     $dogFull01.classList.remove('active');
 };
-document.querySelector('.dog_box_02_full span').onclick = () =>{
+document.querySelector('.dog_box_02_full').onclick = () =>{
     $dogFull02.classList.remove('active');
 };
-document.querySelector('.dog_box_03_full span').onclick = () =>{
+document.querySelector('.dog_box_03_full').onclick = () =>{
     $dogFull03.classList.remove('active');
 };
-document.querySelector('.dog_box_04_full span').onclick = () =>{
+document.querySelector('.dog_box_04_full').onclick = () =>{
     $dogFull04.classList.remove('active');
 };
-document.querySelector('.dog_box_05_full span').onclick = () =>{
+document.querySelector('.dog_box_05_full').onclick = () =>{
     $dogFull05.classList.remove('active');
 };
-document.querySelector('.dog_box_06_full span').onclick = () =>{
+document.querySelector('.dog_box_06_full').onclick = () =>{
     $dogFull06.classList.remove('active');
 };
-document.querySelector('.dog_box_07_full span').onclick = () =>{
+document.querySelector('.dog_box_07_full').onclick = () =>{
     $dogFull07.classList.remove('active');
 };
-document.querySelector('.dog_box_08_full span').onclick = () =>{
+document.querySelector('.dog_box_08_full').onclick = () =>{
     $dogFull08.classList.remove('active');
 };
-document.querySelector('.dog_box_09_full span').onclick = () =>{
+document.querySelector('.dog_box_09_full').onclick = () =>{
     $dogFull09.classList.remove('active');
 };
-document.querySelector('.dog_box_10_full span').onclick = () =>{
+document.querySelector('.dog_box_10_full').onclick = () =>{
     $dogFull10.classList.remove('active');
 };
-document.querySelector('.dog_box_11_full span').onclick = () =>{
+document.querySelector('.dog_box_11_full').onclick = () =>{
     $dogFull11.classList.remove('active');
 };
-document.querySelector('.dog_box_12_full span').onclick = () =>{
+document.querySelector('.dog_box_12_full').onclick = () =>{
     $dogFull12.classList.remove('active');
 };
-document.querySelector('.dog_box_13_full span').onclick = () =>{
+document.querySelector('.dog_box_13_full').onclick = () =>{
     $dogFull13.classList.remove('active');
 };
-document.querySelector('.dog_box_14_full span').onclick = () =>{
+document.querySelector('.dog_box_14_full').onclick = () =>{
     $dogFull14.classList.remove('active');
 };
-document.querySelector('.dog_box_15_full span').onclick = () =>{
+document.querySelector('.dog_box_15_full').onclick = () =>{
     $dogFull15.classList.remove('active');
 };
-document.querySelector('.dog_box_16_full span').onclick = () =>{
+document.querySelector('.dog_box_16_full').onclick = () =>{
     $dogFull16.classList.remove('active');
 };
-document.querySelector('.dog_box_17_full span').onclick = () =>{
+document.querySelector('.dog_box_17_full').onclick = () =>{
     $dogFull17.classList.remove('active');
 };
-document.querySelector('.dog_box_18_full span').onclick = () =>{
+document.querySelector('.dog_box_18_full').onclick = () =>{
     $dogFull18.classList.remove('active');
 };
-document.querySelector('.dog_box_19_full span').onclick = () =>{
+document.querySelector('.dog_box_19_full').onclick = () =>{
     $dogFull19.classList.remove('active');
 };
-document.querySelector('.dog_box_20_full span').onclick = () =>{
+document.querySelector('.dog_box_20_full').onclick = () =>{
     $dogFull20.classList.remove('active');
 };
-document.querySelector('.dog_box_21_full span').onclick = () =>{
+document.querySelector('.dog_box_21_full').onclick = () =>{
     $dogFull21.classList.remove('active');
 };
-document.querySelector('.dog_box_22_full span').onclick = () =>{
+document.querySelector('.dog_box_22_full').onclick = () =>{
     $dogFull22.classList.remove('active');
 };
-document.querySelector('.dog_box_23_full span').onclick = () =>{
+document.querySelector('.dog_box_23_full').onclick = () =>{
     $dogFull23.classList.remove('active');
 };
-document.querySelector('.dog_box_24_full span').onclick = () =>{
+document.querySelector('.dog_box_24_full').onclick = () =>{
     $dogFull24.classList.remove('active');
 };
-document.querySelector('.dog_box_25_full span').onclick = () =>{
+document.querySelector('.dog_box_25_full').onclick = () =>{
     $dogFull25.classList.remove('active');
 };
-document.querySelector('.dog_box_26_full span').onclick = () =>{
+document.querySelector('.dog_box_26_full').onclick = () =>{
     $dogFull26.classList.remove('active');
 };
-document.querySelector('.dog_box_27_full span').onclick = () =>{
+document.querySelector('.dog_box_27_full').onclick = () =>{
     $dogFull27.classList.remove('active');
 };
-document.querySelector('.dog_box_28_full span').onclick = () =>{
+document.querySelector('.dog_box_28_full').onclick = () =>{
     $dogFull28.classList.remove('active');
 };
-document.querySelector('.dog_box_29_full span').onclick = () =>{
+document.querySelector('.dog_box_29_full').onclick = () =>{
     $dogFull29.classList.remove('active');
 };
-document.querySelector('.dog_box_30_full span').onclick = () =>{
+document.querySelector('.dog_box_30_full').onclick = () =>{
     $dogFull30.classList.remove('active');
 };
-document.querySelector('.dog_box_31_full span').onclick = () =>{
+document.querySelector('.dog_box_31_full').onclick = () =>{
     $dogFull31.classList.remove('active');
 };
-document.querySelector('.dog_box_32_full span').onclick = () =>{
+document.querySelector('.dog_box_32_full').onclick = () =>{
     $dogFull32.classList.remove('active');
 };
-document.querySelector('.dog_box_33_full span').onclick = () =>{
+document.querySelector('.dog_box_33_full').onclick = () =>{
     $dogFull33.classList.remove('active');
 };
 document.querySelector('.dog_box_34_full span').onclick = () =>{
