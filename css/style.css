@@ -203,7 +203,7 @@ body{
     margin-bottom: 5%;
     object-fit: cover;
 }
-.portrait_full span{
+/* .portrait_full span{
     font-size: 40px;
     font-weight: bold;
     color: #fff;
@@ -212,7 +212,7 @@ body{
     top: 0%;
     cursor: pointer;
     z-index: 99;
-}
+} */
 
 .portrait_box_10_full,
 .portrait_box_11_full,
@@ -222,14 +222,14 @@ body{
 .portrait_box_18_full{
     background: rgba(255, 255, 255, .7);
 }
-.portrait_box_10_full span,
+/* .portrait_box_10_full span,
 .portrait_box_11_full span,
 .portrait_box_12_full span,
 .portrait_box_14_full span,
 .portrait_box_17_full span,
 .portrait_box_18_full span{
     color: #000;
-}
+} */
 
 
 /* ---- portrait ends ---- */
