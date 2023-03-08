@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Oxygen', sans-serif;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: non;
     outline: none;
     border: none;
     transition: all .2s linear;

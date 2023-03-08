@@ -1,6 +1,7 @@
 // dog , about maru , about midori, faqs
 
 
+// const $navbar = document.querySelector('#navbar');
 
 
 
