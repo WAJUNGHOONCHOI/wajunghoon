@@ -754,6 +754,9 @@ body{
     width: 50%;
     padding: 2rem 2rem 7rem;
 }
+.about_wrap .profile .diplom-prix p{
+    text-transform: capitalize;
+}
 
 
 .about_wrap .profile .exposition{
@@ -777,6 +780,7 @@ body{
 }
 .about_wrap .profile .exposition p{
     line-height: 1.3;
+    text-transform: capitalize;
 }
 
 /* ----- about wrap ends ----- */
