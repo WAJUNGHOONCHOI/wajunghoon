@@ -258,6 +258,10 @@ const $idPetPhotoBox17 = document.querySelector('.id_pet_photo .box_17');
 const $idPetPhotoBox18 = document.querySelector('.id_pet_photo .box_18');
 const $idPetPhotoBox19 = document.querySelector('.id_pet_photo .box_19');
 const $idPetPhotoBox20 = document.querySelector('.id_pet_photo .box_20');
+const $idPetPhotoBox21 = document.querySelector('.id_pet_photo .box_21');
+const $idPetPhotoBox22 = document.querySelector('.id_pet_photo .box_22');
+const $idPetPhotoBox23 = document.querySelector('.id_pet_photo .box_23');
+const $idPetPhotoBox24 = document.querySelector('.id_pet_photo .box_24');
 
 
 
@@ -281,6 +285,10 @@ const $idPetFull17 = document.querySelector('.id_pet_box_17_full');
 const $idPetFull18 = document.querySelector('.id_pet_box_18_full');
 const $idPetFull19 = document.querySelector('.id_pet_box_19_full');
 const $idPetFull20 = document.querySelector('.id_pet_box_20_full');
+const $idPetFull21 = document.querySelector('.id_pet_box_21_full');
+const $idPetFull22 = document.querySelector('.id_pet_box_22_full');
+const $idPetFull23 = document.querySelector('.id_pet_box_23_full');
+const $idPetFull24 = document.querySelector('.id_pet_box_24_full');
 
 
 $idPet.addEventListener('click', () => {
@@ -378,6 +386,22 @@ $idPetPhotoBox20.addEventListener('click', () => {
     window.scrollTo({top:0, left:0});
     $idPetFull20.classList.toggle('active');
 });
+$idPetPhotoBox21.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $idPetFull21.classList.toggle('active');
+});
+$idPetPhotoBox22.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $idPetFull22.classList.toggle('active');
+});
+$idPetPhotoBox23.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $idPetFull23.classList.toggle('active');
+});
+$idPetPhotoBox24.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $idPetFull24.classList.toggle('active');
+});
 
 
 
@@ -440,6 +464,18 @@ document.querySelector('.id_pet_box_19_full').onclick = () =>{
 };
 document.querySelector('.id_pet_box_20_full').onclick = () =>{
     $idPetFull20.classList.remove('active');
+};
+document.querySelector('.id_pet_box_21_full').onclick = () =>{
+    $idPetFull21.classList.remove('active');
+};
+document.querySelector('.id_pet_box_22_full').onclick = () =>{
+    $idPetFull22.classList.remove('active');
+};
+document.querySelector('.id_pet_box_23_full').onclick = () =>{
+    $idPetFull23.classList.remove('active');
+};
+document.querySelector('.id_pet_box_24_full').onclick = () =>{
+    $idPetFull24.classList.remove('active');
 };
 
 
