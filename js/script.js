@@ -4,6 +4,9 @@
 // const $navbar = document.querySelector('#navbar');
 
 
+const $mainPage = document.querySelector('.mainpage');
+
+
 
 
 // dog -----------------------------------
@@ -427,6 +430,7 @@ const $aboutWrap = document.querySelector('.about_wrap');
 
 $about.addEventListener('click', () => {
     $aboutWrap.classList.add('active');
+    
 });
 
 

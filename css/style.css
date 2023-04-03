@@ -662,6 +662,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 999;
 }
 .maru_wrap.active{
     display: block;
@@ -720,6 +721,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 999;
 }
 .about_wrap.active{
     display: block;
@@ -916,6 +918,7 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     background: #000;
+    z-index: 999;
 }
 .contact_container.active{
     display: block;
