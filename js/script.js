@@ -15,9 +15,9 @@ const $dogPhotoBox = document.querySelector('.dog_photo .box');
 const $dog_full = document.querySelector('.dog_full');
 
 
-$dog.addEventListener('click', () => {
-    $dogPhoto.classList.add('active');
-});
+// $dog.addEventListener('click', () => {
+//     $dogPhoto.classList.add('active');
+// });
 
 
 document.querySelector('.dog_photo .logo').addEventListener('click', () => {
