@@ -668,20 +668,6 @@ $snap.addEventListener('click', () => {
     $snapPhoto.classList.add('active');
 });
 
-// document.querySelectorAll('.snap_photo_row img').forEach(image => {
-//     image.onclick = () => {
-//         document.querySelector('.snap_full').style.display = 'block';
-//         document.querySelector('.snap_full img').src = image.getAttribute('src');
-//     }
-// })
-// document.querySelector('.snap_full span').onclick = () => {
-//     document.querySelector('.snap_full').style.display = 'none';
-// }
-
-
-const $snapPhotoBox = document.querySelector('.snap_photo .box');
-const $snap_full = document.querySelector('.snap_full');
-
 
 
 
@@ -692,9 +678,39 @@ document.querySelector('.snap_photo .logo').addEventListener('click', () => {
 
 const $snapPhotoBox01 = document.querySelector('.snap_photo .box_01');
 const $snapPhotoBox02 = document.querySelector('.snap_photo .box_02');
+const $snapPhotoBox03 = document.querySelector('.snap_photo .box_03');
+const $snapPhotoBox04 = document.querySelector('.snap_photo .box_04');
+const $snapPhotoBox05 = document.querySelector('.snap_photo .box_05');
+const $snapPhotoBox06 = document.querySelector('.snap_photo .box_06');
+const $snapPhotoBox07 = document.querySelector('.snap_photo .box_07');
+const $snapPhotoBox08 = document.querySelector('.snap_photo .box_08');
+const $snapPhotoBox09 = document.querySelector('.snap_photo .box_09');
+const $snapPhotoBox10 = document.querySelector('.snap_photo .box_10');
+const $snapPhotoBox11 = document.querySelector('.snap_photo .box_11');
+const $snapPhotoBox12 = document.querySelector('.snap_photo .box_12');
+const $snapPhotoBox13 = document.querySelector('.snap_photo .box_13');
+const $snapPhotoBox14 = document.querySelector('.snap_photo .box_14');
+const $snapPhotoBox15 = document.querySelector('.snap_photo .box_15');
+const $snapPhotoBox16 = document.querySelector('.snap_photo .box_16');
 
 const $snapFull01 = document.querySelector('.snap_box_01_full');
 const $snapFull02 = document.querySelector('.snap_box_02_full');
+const $snapFull03 = document.querySelector('.snap_box_03_full');
+const $snapFull04 = document.querySelector('.snap_box_04_full');
+const $snapFull05 = document.querySelector('.snap_box_05_full');
+const $snapFull06 = document.querySelector('.snap_box_06_full');
+const $snapFull07 = document.querySelector('.snap_box_07_full');
+const $snapFull08 = document.querySelector('.snap_box_08_full');
+const $snapFull09 = document.querySelector('.snap_box_09_full');
+const $snapFull10 = document.querySelector('.snap_box_10_full');
+const $snapFull11 = document.querySelector('.snap_box_11_full');
+const $snapFull12 = document.querySelector('.snap_box_12_full');
+const $snapFull13 = document.querySelector('.snap_box_13_full');
+const $snapFull14 = document.querySelector('.snap_box_14_full');
+const $snapFull15 = document.querySelector('.snap_box_15_full');
+const $snapFull16 = document.querySelector('.snap_box_16_full');
+
+
 
 
 $snapPhotoBox01.addEventListener('click', () => {
@@ -704,7 +720,70 @@ $snapPhotoBox01.addEventListener('click', () => {
 $snapPhotoBox02.addEventListener('click', () => {
     $snapFull02.classList.toggle('active');
 });
+$snapPhotoBox03.addEventListener('click', () => {
+    $snapFull03.classList.toggle('active');
+});
 
+$snapPhotoBox04.addEventListener('click', () => {
+    $snapFull04.classList.toggle('active');
+});
+$snapPhotoBox05.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull05.classList.toggle('active');
+});
+
+$snapPhotoBox06.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull06.classList.toggle('active');
+});
+$snapPhotoBox07.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull07.classList.toggle('active');
+});
+
+$snapPhotoBox08.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull08.classList.toggle('active');
+});
+$snapPhotoBox09.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull09.classList.toggle('active');
+});
+
+$snapPhotoBox10.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull10.classList.toggle('active');
+});
+
+$snapPhotoBox11.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull11.classList.toggle('active');
+});
+
+$snapPhotoBox12.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull12.classList.toggle('active');
+});
+
+$snapPhotoBox13.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull13.classList.toggle('active');
+});
+
+$snapPhotoBox14.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull14.classList.toggle('active');
+});
+
+$snapPhotoBox15.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull15.classList.toggle('active');
+});
+
+$snapPhotoBox16.addEventListener('click', () => {
+    window.scrollTo({top:0, left:0});
+    $snapFull16.classList.toggle('active');
+});
 
 
 
@@ -714,7 +793,51 @@ document.querySelector('.snap_box_01_full').onclick = () =>{
 document.querySelector('.snap_box_02_full').onclick = () =>{
     $snapFull02.classList.remove('active');
 };
-
+document.querySelector('.snap_box_03_full').onclick = () =>{
+    $snapFull03.classList.remove('active');
+};
+document.querySelector('.snap_box_04_full').onclick = () =>{
+    $snapFull04.classList.remove('active');
+};
+document.querySelector('.snap_box_05_full').onclick = () =>{
+    $snapFull05.classList.remove('active');
+};
+document.querySelector('.snap_box_06_full').onclick = () =>{
+    $snapFull06.classList.remove('active');
+};
+document.querySelector('.snap_box_07_full').onclick = () =>{
+    $snapFull07.classList.remove('active');
+};
+document.querySelector('.snap_box_08_full').onclick = () =>{
+    $snapFull08.classList.remove('active');
+};
+document.querySelector('.snap_box_09_full').onclick = () =>{
+    $snapFull09.classList.remove('active');
+};
+document.querySelector('.snap_box_10_full').onclick = () =>{
+    $snapFull10.classList.remove('active');
+};
+document.querySelector('.snap_box_11_full').onclick = () =>{
+    $snapFull11.classList.remove('active');
+};
+document.querySelector('.snap_box_12_full').onclick = () =>{
+    $snapFull12.classList.remove('active');
+};
+document.querySelector('.snap_box_13_full').onclick = () =>{
+    $snapFull13.classList.remove('active');
+};
+document.querySelector('.snap_box_14_full').onclick = () =>{
+    $snapFull14.classList.remove('active');
+};
+document.querySelector('.snap_box_15_full').onclick = () =>{
+    $snapFull15.classList.remove('active');
+};
+document.querySelector('.snap_box_16_full').onclick = () =>{
+    $snapFull16.classList.remove('active');
+};
+document.querySelector('.portrait_box_19_full').onclick = () =>{
+    $portraitFull19.classList.remove('active');
+};
 
 
 
