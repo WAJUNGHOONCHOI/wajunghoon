@@ -5,8 +5,9 @@
 
 const $portrait = document.querySelector('#portrait');
 const $portraitPhoto = document.querySelector('.portrait_photo');
-const $portraitPhotoBox = document.querySelector('.portrait_photo .box');
-const $portrait_full = document.querySelector('.portrait_full');
+const $portraitPhotoLogo = document.querySelector('.portrait_photo .logo');
+$portrait.addEventListener('click', () => { $portraitPhoto.classList.add('active'); });
+$portraitPhotoLogo.addEventListener('click', () => { $portraitPhoto.classList.remove('active'); });
 
 
 
@@ -232,8 +233,9 @@ document.querySelector('.portrait_box_20_full').onclick = () =>{
 
 const $idPet = document.querySelector('#idpet');
 const $idPetPhoto = document.querySelector('.id_pet_photo');
-const $idPetPhotoBox = document.querySelector('.id_pet_photo .box');
-const $idPet_full = document.querySelector('.id_pet_full');
+const $idPetPhotoLogo = document.querySelector('.id_pet_photo .logo');
+$idPet.addEventListener('click', () => { $idPetPhoto.classList.add('active'); });
+$idPetPhotoLogo.addEventListener('click', () => {  $idPetPhoto.classList.remove('active'); });
 
 
 
@@ -662,18 +664,9 @@ document.querySelector('.food_box_08_full').onclick = () =>{
 
 const $snap = document.querySelector('#snap');
 const $snapPhoto = document.querySelector('.snap_photo');
-
-
-$snap.addEventListener('click', () => {
-    $snapPhoto.classList.add('active');
-});
-
-
-
-
-document.querySelector('.snap_photo .logo').addEventListener('click', () => {
-    $snapPhoto.classList.remove('active');
-});
+const $snapPhotoLogo = document.querySelector('.snap_photo .logo');
+$snap.addEventListener('click', () => { $snapPhoto.classList.add('active'); });
+$snapPhotoLogo.addEventListener('click', () => { $snapPhoto.classList.remove('active'); });
 
 
 const $snapPhotoBox01 = document.querySelector('.snap_photo .box_01');
@@ -845,16 +838,7 @@ document.querySelector('.portrait_box_19_full').onclick = () =>{
 
 // ------ contact -------
 
-const $contact = document.querySelector('#contact');
-const $contactContainer = document.querySelector('.contact_container');
 
-$contact.addEventListener('click', () => {
-    $contactContainer.classList.add('active');
-});
-
-document.querySelector('.contact_container .logo').addEventListener('click', () => {
-    $contactContainer.classList.remove('active');
-});
 
 
 

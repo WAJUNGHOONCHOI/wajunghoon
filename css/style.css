@@ -75,7 +75,7 @@ body{
 .mainpage .midori_main{
     width: 100%;
     height: 50vh;
-    background: #000;
+    background: #fff;
     position: relative;
 }
 
@@ -135,7 +135,7 @@ body{
     margin: 7px 0 15px;
     opacity: 0;
 }
-.navbar > ul > li:hover > ul{
+.navbar > ul:hover > li > ul{
     opacity: 1;
 }
 .navbar > ul > li > ul > li{
@@ -150,124 +150,30 @@ body{
 .navbar > ul > li > ul > li a:hover{
     color: rgba(255, 255, 255, 1);
 }
-/*  */
+.midori_navbar > ul > li > ul > li a{
+    color: rgba(0, 0, 0, .8);
+}
+.midori_navbar > ul > li > ul > li a:hover{
+    color: rgba(0, 0, 0, 1);
+}
+.midori_navbar > ul > li{
+    color: rgba(0, 0, 0, .8);
+}
+.navbar > ul > li > ul > li a i{
+    font-size: 20px;
+}
 .navbar > ul > li > ul > li.sns-list{
     margin-top: 7px;
 }
-.sns{
-    margin: 0px 3px;
-    text-align: center;
-    font-size: 20px;
-    color: rgba(255, 255, 255, .9)
-}
-.sns:hover{
-    color: rgba(255, 255, 255, 1)
-}
 
 
 
-/* ---- portrait starts ---- */
-
-.portrait_photo{
-    display: none;
-    width: 100%;
-    height: 100%;
-    padding: 3% 10% 3%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: #000;
-}
-.portrait_photo.active{
-    display: block;
-}
-
-
-.portrait_photo .logo{
-    padding-bottom: 1.3rem;
-}
-
-
-.portrait_photo .portrait_photo_row{
-    display: flex;
-    background: #000;
-}
-.portrait_photo .portrait_photo_row .box{
-    flex: 1;
-    height: 250px;
-    margin: 10px;
-    text-align: center;
-}
-.portrait_photo .portrait_photo_row .box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
+/* gallery starts */
 
 
 
+/* gallery ends */
 
-
-.portrait_full_page{
-    position: absolute;
-    left: 0; right: 0;
-    top: 0;
-}
-.portrait_full_page.active{
-    width: 100%;
-    height: 100%;
-}
-.portrait_full{
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    padding: 4rem 4% 35%;
-    text-align: center;
-    background:rgba(0, 0, 0, .8);
-    position: relative;
-}
-.portrait_full.active{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.portrait_full img{
-    width: 50%;
-    margin-bottom: 5%;
-    object-fit: cover;
-}
-/* .portrait_full span{
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-    position: fixed;
-    right: 2%;
-    top: 0%;
-    cursor: pointer;
-    z-index: 99;
-} */
-
-.portrait_box_10_full,
-.portrait_box_11_full,
-.portrait_box_12_full,
-.portrait_box_14_full,
-.portrait_box_17_full,
-.portrait_box_18_full{
-    background: rgba(255, 255, 255, .7);
-}
-/* .portrait_box_10_full span,
-.portrait_box_11_full span,
-.portrait_box_12_full span,
-.portrait_box_14_full span,
-.portrait_box_17_full span,
-.portrait_box_18_full span{
-    color: #000;
-} */
-
-
-/* ---- portrait ends ---- */
 
 
 
@@ -296,155 +202,64 @@ body{
     padding-bottom: 1.3rem;
 }
 
-
-.id_pet_photo .id_pet_row{
+.id_pet_gallery{
     display: flex;
-    background: #000;
+    flex-wrap: wrap;
 }
-.id_pet_photo .id_pet_row .box{
-    flex: 1;
-    height: 250px;
-    margin: 10px;
-    text-align: center;
+.id_pet_gallery > a{
+    width: 25%;
+    padding: 3px;
+    box-sizing: border-box;
 }
-.id_pet_photo .id_pet_row .box img{
+.id_pet_gallery > a > img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-
-
-
-
-.id_pet_full_page{
-    position: absolute;
-    left: 0; right: 0;
-    top: 0;
-}
-.id_pet_full_page.active{
-    width: 100%;
-    height: 100%;
-}
-.id_pet_full{
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    padding: 4rem 4% 160%;
-    text-align: center;
-    background:rgba(0, 0, 0, .8);
-    position: relative;
-}
-.id_pet_full.active{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.id_pet_full img{
-    width: 50%;
-    margin-bottom: 5%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* id-pet ends */
 
 
+/* portrait starts */
 
-
-
-/* ---- dog starts ---- */
-
-.dog_photo{
+.portrait_photo{
     display: none;
     width: 100%;
     height: 100%;
-    padding: 3% 10%;
+    padding: 3% 10% 3%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background: #000;
 }
-.dog_photo.active{
+.portrait_photo.active{
     display: block;
 }
 
 
-.dog_photo .dog_photo_row{
+.portrait_photo .logo{
+    padding-bottom: 1.3rem;
+}
+
+.portrait_gallery{
     display: flex;
-    background: #000;
+    flex-wrap: wrap;
 }
-.dog_photo .dog_photo_row .box{
-    flex: 1;
-    height: 200px;
-    margin: 10px;
-    text-align: center;
+.portrait_gallery > a{
+    width: 25%;
+    padding: 3px;
+    box-sizing: border-box;
 }
-.dog_photo .dog_photo_row .box img{
-    width: 75%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-
-
-
-
-.dog_full_page{
-    position: absolute;
-    left: 0; right: 0;
-    top: 0;
-}
-.dog_full_page.active{
+.portrait_gallery > a > img{
     width: 100%;
     height: 100%;
-}
-.dog_full{
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    padding: 4rem 4% 80%;
-    text-align: center;
-    background:rgba(0, 0, 0, .9);
-    position: relative;
-}
-.dog_full.active{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.dog_full img{
-    width: 50%;
-    padding-bottom: 50%;
     object-fit: cover;
 }
-.dog_box_39_full img{
-    padding-bottom: 5%;
-}
-.dog_full span{
-    display: inline-block;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-    position: absolute;
-    right: 2%;
-    top: 0%;
-    cursor: pointer;
-    z-index: 99;
-}
 
-.dog_full_page .dog_box_25_full,
-.dog_full_page .dog_box_26_full,
-.dog_full_page .dog_box_27_full,
-.dog_full_page .dog_box_28_full{
-    padding-top: 80px;
-}
+/* portrait ends */
 
 
-/* ----- dog ends ----- */
 
 
 
@@ -467,70 +282,26 @@ body{
 }
 
 
-.food_photo .food_photo_row{
+.food_photo .logo{
+    padding-bottom: 1.3rem;
+}
+
+.food_gallery{
     display: flex;
-    background: #000;
+    flex-wrap: wrap;
 }
-.food_photo .food_photo_row .box{
-    flex: 1;
-    height: 200px;
-    margin: 10px;
-    text-align: center;
+.food_gallery > a{
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
 }
-.food_photo .food_photo_row .box img{
+.food_gallery > a > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    cursor: pointer;
 }
 
 
-
-
-
-.food_full_page{
-    position: absolute;
-    left: 0; right: 0;
-    top: 0;
-}
-.food_full_page.active{
-    width: 100%;
-    height: 100%;
-}
-.food_full{
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    padding: 4% 4% 20%;
-    text-align: center;
-    background:rgba(0, 0, 0, .9);
-    position: relative;
-}
-.food_full.active{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.food_box_05_full{
-    padding-bottom: 50%;
-}
-.food_full img{
-    width: 50%;
-    padding-bottom: 5%;
-    object-fit: cover;
-}
-.food_full span{
-    display: inline-block;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-    position: absolute;
-    right: 2%;
-    top: 0%;
-    cursor: pointer;
-    z-index: 99;
-}
 
 /* ----- food ends ----- */
 
@@ -555,86 +326,64 @@ body{
     display: block;
 }
 
-
 .snap_photo .logo{
     padding-bottom: 1.3rem;
 }
 
-
-.snap_photo .snap_photo_row{
+.snap_photo .snap_gallery{
     display: flex;
-    background: #000;
+    flex-wrap: wrap;
 }
-.snap_photo .snap_photo_row .box{
+.snap_photo .snap_gallery > a{
     width: 25%;
-    height: 250px;
-    margin: 10px;
-    text-align: center;
-    overflow: hidden;
+    padding: 3px;
+    box-sizing: border-box;
 }
-.snap_photo .snap_photo_row .box img{
+.snap_photo .snap_gallery > a > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    cursor: pointer;
 }
 
+/* ----- snap ends ----- */
 
 
 
 
-.snap_full_page{
-    position: absolute;
-    left: 0; right: 0;
-    top: 0;
-}
-.snap_full_page.active{
-    width: 100%;
-    height: 100%;
-}
-.snap_full{
+/* ----- snap starts ----- */
+
+.paris_snap_photo{
     display: none;
     width: 100%;
     height: 100%;
-    padding: 4rem 4% 100%;
-    text-align: center;
-    background:rgba(0, 0, 0, .9);
-    position: relative;
+    padding: 3% 10% 3%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
 }
-.snap_full.active{
+.paris_snap_photo.active{
     display: block;
 }
-.snap_full img{
-    width: 50%;
-    margin-bottom: 5%;
-    object-fit: cover;
-}
-.snap_full span{
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-    position: fixed;
-    right: 2%;
-    top: 0%;
-    cursor: pointer;
-    z-index: 99;
+
+.paris_snap_photo .logo{
+    padding-bottom: 1.3rem;
 }
 
-.portrait_box_10_full,
-.portrait_box_11_full,
-.portrait_box_12_full,
-.portrait_box_14_full,
-.portrait_box_17_full,
-.portrait_box_18_full{
-    background: rgba(255, 255, 255, .7);
+.paris_snap_photo .paris_snap_gallery{
+    display: flex;
+    flex-wrap: wrap;
 }
-.portrait_box_10_full span,
-.portrait_box_11_full span,
-.portrait_box_12_full span,
-.portrait_box_14_full span,
-.portrait_box_17_full span,
-.portrait_box_18_full span{
-    color: #000;
+.paris_snap_photo .paris_snap_gallery > a{
+    width: 25%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.paris_snap_photo .paris_snap_gallery > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ----- snap ends ----- */
@@ -977,127 +726,13 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:1200px){
-    .dog_photo .dog_photo_row .box img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
 @media (max-width:1093px){
 
     .mainpage .maintitle img{
         width: 60%;
     }
-
-
-    .portrait_photo.active{
-        padding: 8% 4%;
-    }
-    .portrait_photo .portrait_photo_row .box{
-        height: 160px;
-    }
-
-
-    .id_pet_photo.active{
-        padding: 8% 4%;
-    }
-    .id_pet_photo .id_pet_photo_row .box{
-        height: 160px;
-    }
-    .portrait_full{
-        padding: 2rem 4% 125%;
-    }
-
-
-    .dog_photo.active{
-        padding: 8% 10%;
-    }
-    .dog_photo .dog_photo_row .box{
-        flex: 1;
-        height: 140px;
-        margin: 4px;
-        text-align: center;
-    }
-
-
-    .dog_full{
-        padding-bottom: 53%;
-    }
-    .dog_full img{
-        width: 80%;
-    }
-
-
-
-    .food_photo.active{
-        padding: 8% 4%;
-    }
-    .food_photo .food_photo_row .box{
-        height: 160px;
-    }
-
-
-    .snap_photo.active{
-        padding: 8% 4%;
-    }
-    .snap_photo .snap_photo_row .box{
-        height: 160px;
-    }
-
-
-
     .about_wrap{
         padding: 8% 10%;
-    }
-
-
-    .faq_container .faq_wrap{
-        padding: 10% 15%;
     }
 
 
@@ -1145,83 +780,6 @@ body{
         color: rgba(255, 255, 255, 1);
     }
 
-    
-    
-    .portrait_photo .logo{
-        padding-left: 1rem;
-    }
-    .portrait_photo .portrait_photo_row .box{
-        height: 160px;
-        margin: 4px;
-    }
-    .portrait_full{
-        padding: 2rem 4% 125%;
-    }
-    .portrait_full img{
-        width: 80%;
-    }
-
-
-    .id_pet_photo .logo{
-        padding-left: 1rem;
-    }
-    .id_pet_photo .id_pet_photo_row .box{
-        height: 160px;
-        margin: 4px;
-    }
-    .id_pet_full{
-        padding: 2rem 4% 150%;
-    }
-    .id_pet_full img{
-        width: 80%;
-    }
-
-
-
-    .dog_photo .dog_photo_row .box{
-        height: 140px;
-        margin: 4px;
-    }
-    .dog_full{
-        padding: 25% 4% 124%;
-    }
-
-
-
-    .food_photo .logo{
-        padding-left: 1rem;
-    }
-    .food_photo .food_photo_row .box{
-        height: 160px;
-        margin: 4px;
-    }
-    .food_full{
-        padding:  15% 4% 40%;
-    }
-    .food_full img{
-        width: 80%;
-    }
-
-
-
-    .snap_photo .logo{
-        padding-left: 1rem;
-    }
-    .snap_photo .snap_photo_row .box{
-        height: 160px;
-        margin: 4px;
-    }
-    .snap_full{
-        padding:  15% 4% 125%;
-    }
-    .snap_full img{
-        width: 80%;
-    }
-
-
-
-
-
     .maru_wrap{
         padding: 5% 10% 7%;
     }
@@ -1247,27 +805,6 @@ body{
     }
     .about_wrap .profile .exposition > span{
         font-size: 1.3rem;
-    }
-
-
-    
-    
-    .faq_container .logo > div{
-        text-align: center;
-    }
-    .faq_container .faq_wrap .faq .question,
-    .faq_container .faq_wrap .faq .answer{
-        font-size: 1.4rem;
-    }
-    .faq_container .faq_wrap .faqs{
-        padding-top: 50px;
-    }
-    .faq_container .faq_wrap .faq .answer p{
-        padding: 2rem;
-        margin-top: 15px;
-        margin-bottom: 5px;
-        line-height: 1.5;
-        word-break: keep-all;
     }
 
 
@@ -1309,89 +846,7 @@ body{
     .mainpage .maintitle img{
         width: 80%;
     }
-
     
-    .portrait_photo .portrait_photo_row .box{
-        height: 120px;
-    }
-    .portrait_photo .portrait_photo_row .box img{
-        width: 100%;
-    }
-
-    .portrait_full img{
-        width: 92%;
-    }
-    .portrait_full span{
-        font-size: 27px;
-    }
-
-
-
-    .id_pet_photo .id_pet_photo_row .box{
-        height: 120px;
-    }
-    .id_pet_photo .id_pet_photo_row .box img{
-        width: 100%;
-    }
-
-    .id_pet_full img{
-        width: 92%;
-    }
-
-
-
-    .dog_photo.active{
-        padding: 8% 5%;
-    }
-    .dog_photo .dog_photo_row .box{
-        height: 100px;
-        margin: 4px;
-    }
-    .dog_photo .dog_photo_row .box img{
-        width: 100%;
-    }
-
-    .dog_full img{
-        width: 90%;
-    }
-    .dog_full span{
-        font-size: 45px;
-    }
-
-
-
-    .food_photo .food_photo_row .box{
-        height: 130px;
-    }
-    .food_photo .food_photo_row .box img{
-        width: 100%;
-    }
-
-    .food_full img{
-        width: 92%;
-    }
-    .food_full span{
-        font-size: 27px;
-    }
-
-
-
-    .snap_photo .snap_photo_row .box{
-        height: 130px;
-    }
-    .snap_photo .snap_photo_row .box img{
-        width: 100%;
-    }
-
-    .snap_full img{
-        width: 92%;
-    }
-    .snap_full span{
-        font-size: 27px;
-    }
-
-
-
     .maru_wrap{
         padding: 10% 10% 7%;
     }
@@ -1454,67 +909,9 @@ body{
     }
 
 
-
-
-    .portrait_photo .portrait_photo_row .box{
-        height: 90px;
-        margin: 4px;
+    .mainpage .navbar ul{
+        gap: 5px;
     }
-    .portrait_photo .portrait_photo_row .box img{
-        width: 95%;
-    }
-
-    .portrait_photo .portrait_full img{
-        width: 90%;
-    }
-
-
-    .id_pet_photo .id_pet_row .box{
-        height: 90px;
-        margin: 4px;
-    }
-    .id_pet_photo .id_pet_row .box img{
-        width: 95%;
-    }
-
-    .id_pet_photo .id_pet_full img{
-        width: 90%;
-    }
-
-
-
-    .dog_photo .dog_photo_row .box{
-        height: 80px;
-    }
-    .dog_photo .dog_photo_row .box img{
-        width: 100%;
-    }
-
-
-    .food_photo .food_photo_row .box{
-        height: 90px;
-    }
-    .food_photo .food_photo_row .box img{
-        width: 95%;
-    }
-
-    .food_photo .food_full img{
-        width: 90%;
-    }
-
-
-
-    .snap_photo .snap_photo_row .box{
-        height: 90px;
-    }
-    .snap_photo .snap_photo_row .box img{
-        width: 95%;
-    }
-
-    .snap_photo .snap_full img{
-        width: 90%;
-    }
-
 
 
     .about_wrap .logo > div p{
