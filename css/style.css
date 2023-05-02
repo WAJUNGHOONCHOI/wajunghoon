@@ -964,6 +964,7 @@ body{
     
     #burgernav > ul {
         display: block;
+        margin-right: 0;
     }
     #burgernav > ul > li{
         text-align: right;
