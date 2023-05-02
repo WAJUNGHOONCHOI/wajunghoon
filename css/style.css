@@ -24,7 +24,9 @@ body{
 }
 
 
-
+.logo{
+    display: inline-block;
+}
 .logo .logo_image{
     margin-bottom: 8px;
     text-align: left;
