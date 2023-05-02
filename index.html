@@ -58,6 +58,175 @@
                 </ul>
             </nav>
         </div>
+        <div id="burger" class="fas fa-bars"></div>
+        <div id="burgernav">
+            <ul>
+                <li><a href="#" id="b_home">Home</a></li>
+                <li>Maru Gallery
+                    <ul>
+                        <li><a href="#" id="b_idpet">ID PET</a></li>
+                        <li><a href="#" id="b_dog">Pawtrait / Pet profile</a></li>
+                        <li><a href="#" id="b_portrait">Portrait</a></li>
+                        <li><a href="#" id="b_food">Food & Product</a></li>
+                        <li><a href="#" id="b_snap">Home Snap</a></li>
+                        <li><a href="#" id="b_parissnap">Paris Snap</a></li>
+                    </ul>
+                </li>
+                <li>Midori Gallery
+                    <ul>
+                        <li><a href="#" id="b_personal_work">Personal Work</a></li>
+                        <li><a href="#" id="b_art_work">Art Work</a></li>
+                    </ul>
+                </li>
+                <li>Info
+                    <ul>
+                        <li><a href="#" id="b_about_maru">About Maru</a></li>
+                        <li><a href="#" id="b_about">About Midori</a></li>
+                        <li><a href="#" id="b_contact">contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script>
+            const $burger = document.querySelector('#burger');
+            const $burgernav = document.querySelector('#burgernav');
+            const $bHome = document.querySelector('#b_home');
+            const $bIdpet = document.querySelector('#b_idpet')
+            const $bPortrait = document.querySelector('#b_portrait')
+            const $bFood = document.querySelector('#b_food')
+            const $bPersonal = document.querySelector('#b_personal_work')
+            const $bArtWork = document.querySelector('#b_art_work')
+            const $bSnap = document.querySelector('#b_snap')
+            const $bParisSnap = document.querySelector('#b_parissnap')
+            const $bAboutMaru = document.querySelector('#b_about_maru')
+            const $bAbout = document.querySelector('#b_about')
+            const $bContact = document.querySelector('#b_contact')
+            $burger.addEventListener('click', () => {
+                // $menubar.classList.remove('fa-bars');
+                $burger.classList.toggle('fa-times');
+                $burgernav.classList.toggle('active');
+            });
+            $bHome.addEventListener('click', () => {
+                $burger.classList.remove('active');
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bIdpet.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.add('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bPortrait.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.add('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bFood.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.add('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bPersonal.addEventListener('click', () => {});
+            $bArtWork.addEventListener('click', () => {});
+            $bSnap.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.add('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bParisSnap.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.add('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bAboutMaru.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $maruWrap.classList.add('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bAbout.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.add('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bContact.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.add('active');
+            });
+
+        </script>
     </section>
 
 
@@ -145,8 +314,14 @@
     const $idPet = document.querySelector('#idpet');
     const $idPetPhoto = document.querySelector('.id_pet_photo');
     const $idPetPhotoLogo = document.querySelector('.id_pet_photo .logo');
-    $idPet.addEventListener('click', () => { $idPetPhoto.classList.add('active'); });
-    $idPetPhotoLogo.addEventListener('click', () => { $idPetPhoto.classList.remove('active'); });
+    $idPet.addEventListener('click', () => { 
+        $idPetPhoto.classList.add('active');
+        $burger.classList.toggle('active'); 
+    });
+    $idPetPhotoLogo.addEventListener('click', () => { 
+        $idPetPhoto.classList.remove('active'); 
+        $burger.classList.remove('active');
+    });
 </script>
 
 <!-- id-pet ends -->
@@ -205,8 +380,14 @@
     const $portrait = document.querySelector('#portrait');
     const $portraitPhoto = document.querySelector('.portrait_photo');
     const $portraitPhotoLogo = document.querySelector('.portrait_photo .logo');
-    $portrait.addEventListener('click', () => { $portraitPhoto.classList.add('active'); });
-    $portraitPhotoLogo.addEventListener('click', () => { $portraitPhoto.classList.remove('active'); });
+    $portrait.addEventListener('click', () => { 
+        $portraitPhoto.classList.add('active'); 
+        $burger.classList.add('active'); 
+    });
+    $portraitPhotoLogo.addEventListener('click', () => { 
+        $portraitPhoto.classList.remove('active'); 
+        $burger.classList.remove('active');
+    });
 </script>
 
 <!-- portrait ends -->
@@ -252,8 +433,14 @@
     const $food = document.querySelector('#food');
     const $foodPhotoWrap = document.querySelector('.food_photo')
     const $foodPhotoLogo = document.querySelector('.food_photo .logo')
-    $food.addEventListener('click', () => { $foodPhotoWrap.classList.toggle('active') });
-    $foodPhotoLogo.addEventListener('click', () => { $foodPhotoWrap.classList.remove('active'); });
+    $food.addEventListener('click', () => { 
+        $foodPhotoWrap.classList.toggle('active') 
+        $burger.classList.add('active'); 
+    });
+    $foodPhotoLogo.addEventListener('click', () => { 
+        $foodPhotoWrap.classList.remove('active'); 
+        $burger.classList.remove('active');
+        });
 </script>
 
 
@@ -323,8 +510,14 @@
     const $snap = document.querySelector('#snap');
     const $snapPhoto = document.querySelector('.snap_photo');
     const $snapPhotoLogo = document.querySelector('.snap_photo .logo');
-    $snap.addEventListener('click', () => { $snapPhoto.classList.add('active'); });
-    $snapPhotoLogo.addEventListener('click', () => { $snapPhoto.classList.remove('active'); });
+    $snap.addEventListener('click', () => { 
+        $snapPhoto.classList.add('active'); 
+        $burger.classList.add('active'); 
+    });
+    $snapPhotoLogo.addEventListener('click', () => { 
+        $snapPhoto.classList.remove('active'); 
+        $burger.classList.remove('active');
+    });
 </script>
 
 <!-- snap ends -->
@@ -385,8 +578,14 @@
     const $parisSnap = document.querySelector('#parissnap');
     const $parisSnapPhoto = document.querySelector('.paris_snap_photo');
     const $parisSnapPhotoLogo = document.querySelector('.paris_snap_photo .logo');
-    $parisSnap.addEventListener('click', () => { $parisSnapPhoto.classList.add('active'); });
-    $parisSnapPhotoLogo.addEventListener('click', () => { $parisSnapPhoto.classList.remove('active'); });
+    $parisSnap.addEventListener('click', () => { 
+        $parisSnapPhoto.classList.add('active'); 
+        $burger.classList.add('active'); 
+    });
+    $parisSnapPhotoLogo.addEventListener('click', () => { 
+        $parisSnapPhoto.classList.remove('active'); 
+        $burger.classList.remove('active');
+    });
 </script>
 
 <!-- paris snap ends -->
@@ -439,8 +638,14 @@
         const $maruAbout = document.querySelector('#about_maru');
         const $maruWrap = document.querySelector('.maru_wrap');
         const $maruWrapLogo = document.querySelector('.maru_wrap .logo');
-        $maruAbout.addEventListener('click', () => { $maruWrap.classList.toggle('active'); });
-        $maruWrapLogo.addEventListener('click', () => { $maruWrap.classList.remove('active'); });
+        $maruAbout.addEventListener('click', () => { 
+            $maruWrap.classList.toggle('active'); 
+            $burger.classList.add('active'); 
+        });
+        $maruWrapLogo.addEventListener('click', () => { 
+            $maruWrap.classList.remove('active'); 
+            $burger.classList.remove('active');
+        });
     </script>
 
 <!-- maru 페이지 ends -->
@@ -531,8 +736,14 @@
         const $about = document.querySelector('#about');
         const $aboutWrap = document.querySelector('.about_wrap');
         const $aboutWrapLogo = document.querySelector('.about_wrap .logo');
-        $about.addEventListener('click', () => { $aboutWrap.classList.add('active'); });
-        $aboutWrapLogo.addEventListener('click', () => { $aboutWrap.classList.remove('active'); });
+        $about.addEventListener('click', () => { 
+            $aboutWrap.classList.add('active'); 
+            $burger.classList.add('active'); 
+        });
+        $aboutWrapLogo.addEventListener('click', () => { 
+            $aboutWrap.classList.remove('active'); 
+            $burger.classList.remove('active');
+        });
     </script>
 
 <!-- about 페이지 ends -->
@@ -707,8 +918,14 @@
         const $contact = document.querySelector('#contact');
         const $contactContainer = document.querySelector('.contact_container');
         const $contactContainerLogo = document.querySelector('.contact_container .logo');
-        $contact.addEventListener('click', () => { $contactContainer.classList.add('active'); });
-        $contactContainerLogo.addEventListener('click', () => { $contactContainer.classList.remove('active'); });
+        $contact.addEventListener('click', () => { 
+            $contactContainer.classList.add('active'); 
+            $burger.classList.toggle('active'); 
+        });
+        $contactContainerLogo.addEventListener('click', () => { 
+            $contactContainer.classList.remove('active'); 
+            $burger.classList.toggle('active');
+        });
     </script>
 
 <!-- contact 페이지 ends -->
