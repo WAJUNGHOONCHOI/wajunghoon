@@ -103,6 +103,12 @@
             const $bAboutMaru = document.querySelector('#b_about_maru')
             const $bAbout = document.querySelector('#b_about')
             const $bContact = document.querySelector('#b_contact')
+
+
+            window.onscroll = () =>{
+                $burger.classList.remove('fa-times');
+                $burgernav.classList.remove('active');
+            }
             $burger.addEventListener('click', () => {
                 // $menubar.classList.remove('fa-bars');
                 $burger.classList.toggle('fa-times');
