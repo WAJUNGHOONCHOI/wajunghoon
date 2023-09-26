@@ -11,6 +11,7 @@
     border: none;
     transition: all .2s linear;
     transition: width none;
+    -webkit-font-smoothing: antialised;
 }
 html{
     font-size: 62.5%;
@@ -195,7 +196,7 @@ body{
     padding: 100px 20px;
     box-sizing: border-box;
     background: rgba(0, 0, 0, .9);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0%;
     z-index: 998;
@@ -225,6 +226,12 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 12px;
     color: #fff;
+    border-bottom: 1px solid transparent;
+}
+#burgernav > ul > li > ul > li:hover > a{
+    border-bottom: 1px solid #fff;
+
+
 }
 #burgernav .sns{
     display: inline-block;
