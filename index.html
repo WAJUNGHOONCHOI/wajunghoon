@@ -28,6 +28,7 @@
                             <li><a href="#" id="food">Food & Product</a></li>
                             <li><a href="#" id="snap">Home Snap</a></li>
                             <li><a href="#" id="parissnap">Paris Snap</a></li>
+                            <li><a href="#" id="evenement">Evenement</a></li>
                         </ul>
                     </li>
                     <li class="info">Infomation
@@ -70,6 +71,7 @@
                         <li><a href="#" id="b_food">Food & Product</a></li>
                         <li><a href="#" id="b_snap">Home Snap</a></li>
                         <li><a href="#" id="b_parissnap">Paris Snap</a></li>
+                        <li><a href="#" id="b_evenement">Evenement</a></li>
                     </ul>
                 </li>
                 <li>Midori Gallery
@@ -93,16 +95,17 @@
             const $burger = document.querySelector('#burger');
             const $burgernav = document.querySelector('#burgernav');
             const $bHome = document.querySelector('#b_home');
-            const $bIdpet = document.querySelector('#b_idpet')
-            const $bPortrait = document.querySelector('#b_portrait')
-            const $bFood = document.querySelector('#b_food')
-            const $bPersonal = document.querySelector('#b_personal_work')
-            const $bArtWork = document.querySelector('#b_art_work')
-            const $bSnap = document.querySelector('#b_snap')
-            const $bParisSnap = document.querySelector('#b_parissnap')
-            const $bAboutMaru = document.querySelector('#b_about_maru')
-            const $bAbout = document.querySelector('#b_about')
-            const $bContact = document.querySelector('#b_contact')
+            const $bIdpet = document.querySelector('#b_idpet');
+            const $bPortrait = document.querySelector('#b_portrait');
+            const $bFood = document.querySelector('#b_food');
+            const $bPersonal = document.querySelector('#b_personal_work');
+            const $bArtWork = document.querySelector('#b_art_work');
+            const $bSnap = document.querySelector('#b_snap');
+            const $bParisSnap = document.querySelector('#b_parissnap');
+            const $bEvenement = document.querySelector('#b_evenement');
+            const $bAboutMaru = document.querySelector('#b_about_maru');
+            const $bAbout = document.querySelector('#b_about');
+            const $bContact = document.querySelector('#b_contact');
 
 
             window.onscroll = () =>{
@@ -123,6 +126,7 @@
                 $foodPhotoWrap.classList.remove('active'); 
                 $snapPhoto.classList.remove('active'); 
                 $parisSnapPhoto.classList.remove('active'); 
+                $evenementPhoto.classList.remove('active'); 
                 $maruWrap.classList.remove('active'); 
                 $aboutWrap.classList.remove('active'); 
                 $contactContainer.classList.remove('active');
@@ -136,6 +140,7 @@
                 $foodPhotoWrap.classList.remove('active'); 
                 $snapPhoto.classList.remove('active'); 
                 $parisSnapPhoto.classList.remove('active'); 
+                $evenementPhoto.classList.remove('active');  
                 $maruWrap.classList.remove('active'); 
                 $aboutWrap.classList.remove('active'); 
                 $contactContainer.classList.remove('active');
@@ -148,7 +153,8 @@
                 $portraitPhoto.classList.add('active'); 
                 $foodPhotoWrap.classList.remove('active'); 
                 $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active');
+                $evenementPhoto.classList.remove('active'); 
                 $maruWrap.classList.remove('active'); 
                 $aboutWrap.classList.remove('active'); 
                 $contactContainer.classList.remove('active');
@@ -161,7 +167,8 @@
                 $portraitPhoto.classList.remove('active'); 
                 $foodPhotoWrap.classList.add('active'); 
                 $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active');
+                $evenementPhoto.classList.remove('active'); 
                 $maruWrap.classList.remove('active'); 
                 $aboutWrap.classList.remove('active'); 
                 $contactContainer.classList.remove('active');
@@ -177,6 +184,7 @@
                 $foodPhotoWrap.classList.remove('active'); 
                 $snapPhoto.classList.add('active'); 
                 $parisSnapPhoto.classList.remove('active'); 
+                $evenementPhoto.classList.remove('active'); 
                 $maruWrap.classList.remove('active'); 
                 $aboutWrap.classList.remove('active'); 
                 $contactContainer.classList.remove('active');
@@ -190,6 +198,21 @@
                 $foodPhotoWrap.classList.remove('active'); 
                 $snapPhoto.classList.remove('active'); 
                 $parisSnapPhoto.classList.add('active'); 
+                $evenementPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            });
+            $bEvenement.addEventListener('click', () => {
+                $burger.classList.add('active'); 
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $evenementPhoto.classList.add('active'); 
                 $maruWrap.classList.remove('active'); 
                 $aboutWrap.classList.remove('active'); 
                 $contactContainer.classList.remove('active');
@@ -584,6 +607,92 @@
 
 
 
+<!-- evenement 페이지 starts -->
+
+<div class="evenement_photo">
+    <a href="https://maruconceptstudio.art" class="logo">
+        <div class="logo_image">
+            <img src="images/maru_logo-3(blanc).png" alt="">
+        </div>
+        <div class="logo_title">
+            <p>Evenement photo by maru</p>
+        </div>
+    </a>
+    <div class="evenement_gallery gallery">
+        <a href="#" class="music_bank_poster"><img src="images/musicbank/musicbank_000.jpg" alt=""><h3>Music Bank <span>in Paris 2023</span></h3></a>        
+    </div>
+
+    <div class="music_bank">
+        <div><img src="images/musicbank/musicbank_001.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_002.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_003.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_004.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_005.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_006.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_007.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_008.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_009.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_010.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_011.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_012.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_013.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_014.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_015.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_016.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_017.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_018.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_019.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_020.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_021.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_022.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_023.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_024.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_025.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_026.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_027.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_028.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_029.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_030.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_031.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_032.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_033.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_034.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_035.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_036.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_037.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_038.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_039.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_040.jpg" alt=""></div>
+        <div><img src="images/musicbank/musicbank_041.jpg" alt=""></div>
+    </div>
+    
+</div>
+
+<script>
+    const $evenement = document.querySelector('#evenement');
+    const $evenementPhoto = document.querySelector('.evenement_photo');
+    const $musicBankPoster = document.querySelector('.music_bank_poster');
+    const $musicBank = document.querySelector('.music_bank');
+    $evenement.addEventListener('click', () => { 
+        $evenementPhoto.classList.add('active'); 
+        $burger.classList.add('active'); 
+    });
+    $musicBankPoster.addEventListener('click', () => {
+        $musicBank.classList.add('active');
+    });
+    $musicBank.addEventListener('click', () => {
+        $musicBank.classList.remove('active');
+        window.scrollTo({
+        top: 0
+        });
+    });
+</script>
+
+<!-- evenement 페이지 starts -->
+
+
+
+
 
 <!-- maru 페이지 starts -->
 
@@ -728,6 +837,9 @@
     </script>
 
 <!-- about 페이지 ends -->
+
+
+
 
 
 
@@ -917,6 +1029,7 @@
         lightGallery(document.querySelector('.food_gallery'));
         lightGallery(document.querySelector('.snap_gallery'));
         lightGallery(document.querySelector('.paris_snap_gallery'));
+        // lightGallery(document.querySelector('.evenement_gallery'));
     </script>
 </body>
 </html>
