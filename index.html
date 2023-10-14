@@ -107,6 +107,21 @@
             const $bAbout = document.querySelector('#b_about');
             const $bContact = document.querySelector('#b_contact');
 
+            const closeMenu = () => {
+                $burger.classList.add('active');
+                $burgernav.classList.remove('active');
+                $burger.classList.remove('fa-times');
+                $idPetPhoto.classList.remove('active');
+                $portraitPhoto.classList.remove('active'); 
+                $foodPhotoWrap.classList.remove('active'); 
+                $snapPhoto.classList.remove('active'); 
+                $parisSnapPhoto.classList.remove('active'); 
+                $evenementPhoto.classList.remove('active'); 
+                $maruWrap.classList.remove('active'); 
+                $aboutWrap.classList.remove('active'); 
+                $contactContainer.classList.remove('active');
+            };
+
 
             window.onscroll = () =>{
                 $burger.classList.remove('fa-times');
@@ -118,142 +133,44 @@
                 $burgernav.classList.toggle('active');
             });
             $bHome.addEventListener('click', () => {
-                $burger.classList.remove('active');
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
-                $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
-                $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
-                $evenementPhoto.classList.remove('active'); 
-                $maruWrap.classList.remove('active'); 
-                $aboutWrap.classList.remove('active'); 
-                $contactContainer.classList.remove('active');
+                closeMenu();
             });
             $bIdpet.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
+                closeMenu();
                 $idPetPhoto.classList.add('active');
-                $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
-                $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
-                $evenementPhoto.classList.remove('active');  
-                $maruWrap.classList.remove('active'); 
-                $aboutWrap.classList.remove('active'); 
-                $contactContainer.classList.remove('active');
             });
             $bPortrait.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
+                closeMenu();
                 $portraitPhoto.classList.add('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
-                $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active');
-                $evenementPhoto.classList.remove('active'); 
-                $maruWrap.classList.remove('active'); 
-                $aboutWrap.classList.remove('active'); 
-                $contactContainer.classList.remove('active');
             });
             $bFood.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
-                $portraitPhoto.classList.remove('active'); 
+                closeMenu();
                 $foodPhotoWrap.classList.add('active'); 
-                $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active');
-                $evenementPhoto.classList.remove('active'); 
-                $maruWrap.classList.remove('active'); 
-                $aboutWrap.classList.remove('active'); 
-                $contactContainer.classList.remove('active');
             });
             $bPersonal.addEventListener('click', () => {});
             $bArtWork.addEventListener('click', () => {});
             $bSnap.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
-                $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
+                closeMenu();
                 $snapPhoto.classList.add('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
-                $evenementPhoto.classList.remove('active'); 
-                $maruWrap.classList.remove('active'); 
-                $aboutWrap.classList.remove('active'); 
-                $contactContainer.classList.remove('active');
             });
             $bParisSnap.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
-                $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
-                $snapPhoto.classList.remove('active'); 
+                closeMenu();
                 $parisSnapPhoto.classList.add('active'); 
-                $evenementPhoto.classList.remove('active'); 
-                $maruWrap.classList.remove('active'); 
-                $aboutWrap.classList.remove('active'); 
-                $contactContainer.classList.remove('active');
             });
             $bEvenement.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
-                $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
-                $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
+                closeMenu();
                 $evenementPhoto.classList.add('active'); 
-                $maruWrap.classList.remove('active'); 
-                $aboutWrap.classList.remove('active'); 
-                $contactContainer.classList.remove('active');
             });
             $bAboutMaru.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
-                $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
-                $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
+                closeMenu();
                 $maruWrap.classList.add('active'); 
-                $aboutWrap.classList.remove('active'); 
-                $contactContainer.classList.remove('active');
             });
             $bAbout.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
-                $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
-                $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
-                $maruWrap.classList.remove('active'); 
+                closeMenu();
                 $aboutWrap.classList.add('active'); 
-                $contactContainer.classList.remove('active');
             });
             $bContact.addEventListener('click', () => {
-                $burger.classList.add('active'); 
-                $burgernav.classList.remove('active');
-                $burger.classList.remove('fa-times');
-                $idPetPhoto.classList.remove('active');
-                $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
-                $snapPhoto.classList.remove('active'); 
-                $parisSnapPhoto.classList.remove('active'); 
-                $maruWrap.classList.remove('active'); 
-                $aboutWrap.classList.remove('active'); 
+                closeMenu();
                 $contactContainer.classList.add('active');
             });
 
@@ -623,6 +540,7 @@
     </div>
 
     <div class="music_bank">
+        <div id="music_bank_close" >close</div>
         <div><img src="images/musicbank/musicbank_001.jpg" alt=""></div>
         <div><img src="images/musicbank/musicbank_002.jpg" alt=""></div>
         <div><img src="images/musicbank/musicbank_003.jpg" alt=""></div>
@@ -679,9 +597,11 @@
     });
     $musicBankPoster.addEventListener('click', () => {
         $musicBank.classList.add('active');
+        $evenementPhoto.style.zIndex = '999';
     });
     $musicBank.addEventListener('click', () => {
         $musicBank.classList.remove('active');
+        $evenementPhoto.style.zIndex = '0';
         window.scrollTo({
         top: 0
         });
