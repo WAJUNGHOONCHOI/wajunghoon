@@ -24,6 +24,10 @@ body{
     background-color: #000;
 }
 
+.lg-toolbar .lg-download:after{
+    display: none;
+}
+
 
 .logo{
     display: inline-block;
