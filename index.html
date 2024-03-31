@@ -23,7 +23,7 @@
                     <li class="works">Maru Gallery
                         <ul class="works-nav">
                             <li><a href="#" id="idpet">ID PET</a></li>
-                            <li><a href="#" id="dog">Pawtrait / Pet profile</a></li>
+                            <!-- <li><a href="#" id="dog">Pawtrait / Pet profile</a></li> -->
                             <li><a href="#" id="portrait">Portrait</a></li>
                             <li><a href="#" id="food">Food & Product</a></li>
                             <li><a href="#" id="snap">Home Snap</a></li>
@@ -66,7 +66,7 @@
                 <li>Maru Gallery
                     <ul>
                         <li><a href="#" id="b_idpet">ID PET</a></li>
-                        <li><a href="#" id="b_dog">Pawtrait / Pet profile</a></li>
+                        <!-- <li><a href="#" id="b_dog">Pawtrait / Pet profile</a></li> -->
                         <li><a href="#" id="b_portrait">Portrait</a></li>
                         <li><a href="#" id="b_food">Food & Product</a></li>
                         <li><a href="#" id="b_snap">Home Snap</a></li>
@@ -113,7 +113,7 @@
                 $burger.classList.remove('fa-times');
                 $idPetPhoto.classList.remove('active');
                 $portraitPhoto.classList.remove('active'); 
-                $foodPhotoWrap.classList.remove('active'); 
+                $foodPhoto.classList.remove('active'); 
                 $snapPhoto.classList.remove('active'); 
                 $parisSnapPhoto.classList.remove('active'); 
                 $evenementPhoto.classList.remove('active'); 
@@ -134,6 +134,7 @@
             });
             $bHome.addEventListener('click', () => {
                 closeMenu();
+                $burger.classList.remove('active');
             });
             $bIdpet.addEventListener('click', () => {
                 closeMenu();
@@ -337,45 +338,178 @@
 <!-- food-product starts -->
 
 
+
+
+
 <div class="food_photo">
     <a href="https://maruconceptstudio.art" class="logo">
         <div class="logo_image">
             <img src="images/maru_logo-3(blanc).png" alt="">
         </div>
         <div class="logo_title">
-            <p>food photo by maru</p>
+            <p>Evenement photo by maru</p>
         </div>
     </a>
-    
-    <div class="food_gallery gallery">
-        <a href="images/food-full/001.jpg"><img src="images/food-full/001.jpg"></a>
-        <a href="images/food-full/002.jpg"><img src="images/food-full/002.jpg"></a>
-        <a href="images/food-full/003.jpg"><img src="images/food-full/003.jpg"></a>
-        <a href="images/food-full/004.jpg"><img src="images/food-full/004.jpg"></a>
-        <a href="images/food-full/005.jpg"><img src="images/food-full/005.jpg"></a>
-        <a href="images/food-full/006.jpg"><img src="images/food-full/006.jpg"></a>
-        <a href="images/food-full/007.jpg"><img src="images/food-full/007.jpg"></a>
-        <a href="images/food-full/008.jpg"><img src="images/food-full/008.jpg"></a>
-        <a href="images/food-full/009.jpg"><img src="images/food-full/009.jpg"></a>
-        <a href="images/food-full/010.jpg"><img src="images/food-full/010.jpg"></a>
-        <a href="images/food-full/011.jpg"><img src="images/food-full/011.jpg"></a>
-        <a href="images/food-full/012.jpg"><img src="images/food-full/012.jpg"></a>
-        <a href="images/food-full/013.jpg"><img src="images/food-full/013.jpg"></a>
-        <a href="images/food-full/014.jpg"><img src="images/food-full/014.jpg"></a>
-        <a href="images/food-full/015.jpg"><img src="images/food-full/015.jpg"></a>
-        <a href="images/food-full/016.jpg"><img src="images/food-full/016.jpg"></a>
+    <div class="food_photo_gallery gallery">
+        <a href="#" class="bracelet-1-thum"><img src="images/food-full/001.jpg" alt=""></a>       
+        <a href="#" class="bracelet-2-thum"><img src="images/food-full/002.jpg" alt=""></a>       
+        <a href="#" class="boisson-thum"><img src="images/food-full/003.jpg" alt=""></a>       
+        <a href="#" class="gateau-thum"><img src="images/food-full/004.jpg" alt=""></a>       
+        <a href="#" class="coffee-thum"><img src="images/food-full/005.jpg" alt=""></a>       
+        <a href="#" class="sandwich-thum"><img src="images/food-full/006.jpg" alt=""></a>       
+        <a href="#" class="salade-thum"><img src="images/food-full/007.jpg" alt=""></a>       
+        <a href="#" class="snack-thum"><img src="images/food-full/008.jpg" alt=""></a>       
     </div>
+
+    
+    <div class="foodphoto bracelet-1">
+        <p id="close">close</p>
+        <div><img src="images/food-full/001.jpg" alt=""></div>
+        <div><img src="images/food-full/001-1.jpg" alt=""></div>
+        <div><img src="images/food-full/001-2.jpg" alt=""></div>        
+    </div>
+    <div class="foodphoto bracelet-2">
+        <p id="close">close</p>
+        <div><img src="images/food-full/002.jpg" alt=""></div>        
+        <div><img src="images/food-full/002-1.jpg" alt=""></div>        
+        <div><img src="images/food-full/002-2.jpg" alt=""></div>        
+        <div><img src="images/food-full/002-3.jpg" alt=""></div>        
+        
+    </div>
+    <div class="foodphoto boisson">
+        <p id="close">close</p>
+        <div><img src="images/food-full/003.jpg" alt=""></div>
+        <div><img src="images/food-full/003-1.jpg" alt=""></div>        
+    </div>
+    <div class="foodphoto gateau">
+        <p id="close">close</p>
+        <div><img src="images/food-full/004.jpg" alt=""></div>
+        <div><img src="images/food-full/004-1.jpg" alt=""></div>
+    </div>
+    <div class="foodphoto coffee">
+        <p id="close">close</p>
+        <div><img src="images/food-full/005.jpg" alt=""></div>        
+        <div><img src="images/food-full/005-1.jpg" alt=""></div>        
+        <div><img src="images/food-full/005-2.jpg" alt=""></div>        
+        <div><img src="images/food-full/005-3.jpg" alt=""></div>        
+        <div><img src="images/food-full/005-4.jpg" alt=""></div>        
+    </div>
+    <div class="foodphoto sandwich">
+        <p id="close">close</p>
+        <div><img src="images/food-full/006.jpg" alt=""></div>
+    </div>
+    <div class="foodphoto salade">
+        <p id="close">close</p>
+        <div><img src="images/food-full/007.jpg" alt=""></div>        
+        <div><img src="images/food-full/007-1.jpg" alt=""></div>        
+        <div><img src="images/food-full/007-2.jpg" alt=""></div>        
+        <div><img src="images/food-full/007-3.jpg" alt=""></div>        
+        <div><img src="images/food-full/007-4.jpg" alt=""></div>        
+    </div>
+    <div class="foodphoto snack">
+        <p id="close">close</p>
+        <div><img src="images/food-full/008.JPG" alt=""></div>
+    </div>
+    
 </div>
 
 <script>
     const $food = document.querySelector('#food');
-    const $foodPhotoWrap = document.querySelector('.food_photo');
+    const $foodPhoto = document.querySelector('.food_photo');
+    const $bracelet1Thum = document.querySelector('.bracelet-1-thum');
+    const $bracelet1 = document.querySelector('.bracelet-1');
+    const $bracelet2Thum = document.querySelector('.bracelet-2-thum');
+    const $bracelet2 = document.querySelector('.bracelet-2');
+    const $boissonThum = document.querySelector('.boisson-thum');
+    const $boisson = document.querySelector('.boisson');
+    const $gateauThum = document.querySelector('.gateau-thum');
+    const $gateau = document.querySelector('.gateau');
+    const $coffeeThum = document.querySelector('.coffee-thum');
+    const $coffee = document.querySelector('.coffee');
+    const $sandwichThum = document.querySelector('.sandwich-thum');
+    const $sandwich = document.querySelector('.sandwich');
+    const $saladeThum = document.querySelector('.salade-thum');
+    const $salade = document.querySelector('.salade');
+    const $snackThum = document.querySelector('.snack-thum');
+    const $snack = document.querySelector('.snack');
+    
     $food.addEventListener('click', () => { 
-        $foodPhotoWrap.classList.toggle('active') 
+        $foodPhoto.classList.add('active'); 
         $burger.classList.add('active'); 
     });
-</script>
 
+    $bracelet1Thum.addEventListener('click', () => {
+        $bracelet1.classList.add('active');
+        $foodPhoto.style.zIndex = '999';
+    });
+    $bracelet1.addEventListener('click', () => {
+        $bracelet1.classList.remove('active');
+        $foodPhoto.style.zIndex = '0';
+    });
+
+    $bracelet2Thum.addEventListener('click', () => {
+        $bracelet2.classList.add('active');
+        $foodPhoto.style.zIndex = '999';
+    });
+    $bracelet2.addEventListener('click', () => {
+        $bracelet2.classList.remove('active');
+        $foodPhoto.style.zIndex = '0';
+    });
+
+    $boissonThum.addEventListener('click', () => {
+        $boisson.classList.add('active');
+        $foodPhoto.style.zIndex = '999';
+    });
+    $boisson.addEventListener('click', () => {
+        $boisson.classList.remove('active');
+        $foodPhoto.style.zIndex = '0';
+    });
+
+    $gateauThum.addEventListener('click', () => {
+        $gateau.classList.add('active');
+        $foodPhoto.style.zIndex = '999';
+    });
+    $gateau.addEventListener('click', () => {
+        $gateau.classList.remove('active');
+        $foodPhoto.style.zIndex = '0';
+    });
+
+    $coffeeThum.addEventListener('click', () => {
+        $coffee.classList.add('active');
+        $foodPhoto.style.zIndex = '999';
+    });
+    $coffee.addEventListener('click', () => {
+        $coffee.classList.remove('active');
+        $foodPhoto.style.zIndex = '0';
+    });
+    
+    $sandwichThum.addEventListener('click', () => {
+        $sandwich.classList.add('active');
+        $foodPhoto.style.zIndex = '999';
+    });
+    $sandwich.addEventListener('click', () => {
+        $sandwich.classList.remove('active');
+        $foodPhoto.style.zIndex = '0';
+    });
+
+    $saladeThum.addEventListener('click', () => {
+        $salade.classList.add('active');
+        $foodPhoto.style.zIndex = '999';
+    });
+    $salade.addEventListener('click', () => {
+        $salade.classList.remove('active');
+        $foodPhoto.style.zIndex = '0';
+    });
+
+    $snackThum.addEventListener('click', () => {
+        $snack.classList.add('active');
+        $foodPhoto.style.zIndex = '999';
+    });
+    $snack.addEventListener('click', () => {
+        $snack.classList.remove('active');
+        $foodPhoto.style.zIndex = '0';
+    });
+</script>
 
 <!-- food-product ends -->
 
@@ -466,6 +600,10 @@
         </div>
     </a>
     <div class="paris_snap_gallery gallery">
+        <a href="images/parissnap/0080.jpg"><img src="images/parissnap/0080.jpg" alt=""></a>
+        <a href="images/parissnap/0079.jpg"><img src="images/parissnap/0079.jpg" alt=""></a>
+        <a href="images/parissnap/0078.jpg"><img src="images/parissnap/0078.jpg" alt=""></a>
+        <a href="images/parissnap/0077.jpg"><img src="images/parissnap/0077.jpg" alt=""></a>
         <a href="images/parissnap/0076.jpg"><img src="images/parissnap/0076.jpg" alt=""></a>
         <a href="images/parissnap/0075.jpg"><img src="images/parissnap/0075.jpg" alt=""></a>
         <a href="images/parissnap/0074.jpg"><img src="images/parissnap/0074.jpg" alt=""></a>
@@ -568,52 +706,108 @@
         </div>
     </a>
     <div class="evenement_gallery gallery">
-        <a href="#" class="music_bank_poster"><img src="images/musicbank/musicbank_000.jpg" alt=""><h3>Music Bank <span>in Paris 2023</span></h3></a>        
+        <a href="#" class="music_bank_poster"><img src="images/evenement/musicbank/musicbank_000.jpg" alt=""><h3>Music Bank <span>in Paris 2023</span></h3></a>        
+        <a href="#" class="busan_day_poster"><img src="images/evenement/busanday/001.jpg" alt=""><h3>Busan <span>to Paris 2022</span></h3></a>        
+        <a href="#" class="stereo_poster"><img src="images/evenement/stereo/001.jpg" alt=""><h3>stereo <span>2022.11</span></h3></a>        
     </div>
 
-    <div class="music_bank">
-        <div id="music_bank_close" >close</div>
-        <div><img src="images/musicbank/musicbank_001.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_002.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_003.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_004.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_005.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_006.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_007.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_008.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_009.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_010.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_011.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_012.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_013.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_014.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_015.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_016.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_017.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_018.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_019.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_020.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_021.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_022.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_023.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_024.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_025.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_026.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_027.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_028.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_029.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_030.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_031.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_032.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_033.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_034.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_035.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_036.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_037.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_038.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_039.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_040.jpg" alt=""></div>
-        <div><img src="images/musicbank/musicbank_041.jpg" alt=""></div>
+    <div class="eventphoto music_bank">
+        <p id="music_bank_close close" >close</p>
+        <div><img src="images/evenement/musicbank/musicbank_001.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_002.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_003.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_004.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_005.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_006.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_007.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_008.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_009.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_010.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_011.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_012.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_013.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_014.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_015.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_016.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_017.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_018.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_019.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_020.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_021.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_022.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_023.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_024.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_025.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_026.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_027.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_028.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_029.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_030.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_031.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_032.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_033.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_034.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_035.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_036.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_037.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_038.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_039.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_040.jpg" alt=""></div>
+        <div><img src="images/evenement/musicbank/musicbank_041.jpg" alt=""></div>
+    </div>
+
+    <div class="eventphoto busan_day">
+        <p id="busan_day_close close">close</p>
+        <!-- <div><img src="images/busanday/001.jpg" alt=""></div> -->
+        <div><img src="images/evenement/busanday/002.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/003.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/004.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/005.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/006.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/007.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/008.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/009.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/010.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/011.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/012.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/013.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/014.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/015.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/016.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/017.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/018.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/019.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/020.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/021.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/022.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/023.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/024.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/025.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/026.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/027.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/028.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/029.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/030.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/031.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/032.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/033.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/034.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/035.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/036.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/037.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/038.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/039.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/040.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/041.jpg" alt=""></div>
+        <div><img src="images/evenement/busanday/042.jpg" alt=""></div>
+    </div>
+    
+    <div class="eventphoto stereo">
+        <p id="stereo close">close</p>
+        <div><img src="images/evenement/stereo/002.jpg" alt=""></div>
+        <div><img src="images/evenement/stereo/003.jpg" alt=""></div>
+        <div><img src="images/evenement/stereo/004.jpg" alt=""></div>
+        <div><img src="images/evenement/stereo/005.jpg" alt=""></div>
     </div>
     
 </div>
@@ -622,7 +816,12 @@
     const $evenement = document.querySelector('#evenement');
     const $evenementPhoto = document.querySelector('.evenement_photo');
     const $musicBankPoster = document.querySelector('.music_bank_poster');
+    const $busanDayPoster = document.querySelector('.busan_day_poster');
+    const $stereoPoster = document.querySelector('.stereo_poster');
     const $musicBank = document.querySelector('.music_bank');
+    const $busanDay = document.querySelector('.busan_day');
+    const $stereo = document.querySelector('.stereo');
+    
     $evenement.addEventListener('click', () => { 
         $evenementPhoto.classList.add('active'); 
         $burger.classList.add('active'); 
@@ -635,6 +834,30 @@
     });
     $musicBank.addEventListener('click', () => {
         $musicBank.classList.remove('active');
+        $evenementPhoto.style.zIndex = '0';
+        window.scrollTo({
+        top: 0
+        });
+    });
+
+    $busanDayPoster.addEventListener('click', () => {
+        $busanDay.classList.add('active');
+        $evenementPhoto.style.zIndex = '999';
+    });
+    $busanDay.addEventListener('click', () => {
+        $busanDay.classList.remove('active');
+        $evenementPhoto.style.zIndex = '0';
+        window.scrollTo({
+        top: 0
+        });
+    });
+
+    $stereoPoster.addEventListener('click', () => {
+        $stereo.classList.add('active');
+        $evenementPhoto.style.zIndex = '999';
+    });
+    $stereo.addEventListener('click', () => {
+        $stereo.classList.remove('active');
         $evenementPhoto.style.zIndex = '0';
         window.scrollTo({
         top: 0
