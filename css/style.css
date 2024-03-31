@@ -1267,6 +1267,16 @@ body{
         width: 100%;
     }
 
+    .evenement_photo{
+        padding: 3% 5% 3%;
+    }
+    .evenement_photo .evenement_gallery > a {
+        padding: 5px;
+    }
+    .evenement_photo .evenement_gallery > a h3 {
+        padding: 2px;
+    }
+
 
     
     
